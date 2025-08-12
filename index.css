@@ -73,9 +73,7 @@ body {
 .circular--square {
     border-radius: 100%
   }
-body {
-  background-color: #f5f5ef;
-}
+
 .navbar {
       /*background-color: #f5f5efee;*/
       background-color: #f5f5efee;

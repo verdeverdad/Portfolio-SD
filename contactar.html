@@ -117,7 +117,7 @@
 
         a {
             text-decoration: none;
-
+transition: transform 0.3s ease-in-out;
         }
 
         .top-section {
@@ -141,10 +141,10 @@
             cursor: pointer;
         }
 
-        .top-section:hover,
-        .bottom-section:hover {
-            background-color: #777;
-        }
+        a:hover {
+/* Agranda el texto a 1.2 veces su tamaño original */
+  transform: scale(1.5);  
+color: var(--violeta);      }
 
         main {
             padding: 5px;
