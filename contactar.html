@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Formulario de contacto para el portfolio de Sofía Delmonte.">
     <title>SDSTUDIO-Sofía Delmonte</title>
-	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
@@ -73,23 +73,113 @@
         .footer-logo {
             max-width: 60%;
         }
+
+        body {
+            margin: 0;
+            padding-top: 100px;
+            /* Asegúrate de que este valor sea igual a la altura de tu navbar */
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--celeste-claro);
+            color: var(--azul);
+            z-index: 1000;
+            /* La altura de la navbar es de aproximadamente 100px con los paddings */
+        }
+
+        .navbar-top,
+        .navbar-bottom {
+            display: flex;
+            width: 100%;
+            /* Ambas líneas ocupan todo el ancho del contenedor */
+            padding: 5px 0;
+            /* padding vertical, 0 horizontal */
+        }
+
+        .navbar-top {
+            display: flex;
+            width: 100%;
+            padding: 10px 0;
+
+            /* PROPIEDAD CLAVE: Alinea verticalmente todos los hijos al centro */
+            align-items: center;
+            background-color: var(--celeste-claro);
+        }
+
+        .navbar-bottom {
+            background-color: var(--celeste-claro);
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .top-section {
+            width: 33.333%;
+            /* Cada sección ocupa un tercio del ancho */
+            text-align: center;
+            cursor: pointer;
+            /* PROPIEDAD CLAVE: Hace que la sección sea un contenedor flex... */
+            display: flex;
+
+            /* ...y centra su contenido tanto vertical como horizontalmente */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-section {
+            width: 50%;
+            /* Cada sección ocupa la mitad del ancho */
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .top-section:hover,
+        .bottom-section:hover {
+            background-color: #777;
+        }
+
+        main {
+            padding: 20px;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <div class="w3-bar sticky-top fixed-top m-0" style="color: var(--azul); background-color: var(--celeste-claro);">
-            <a href="sobremi.html" class="w3-bar-item w3-button " style="width:33%">SOBRE MÍ</a>
-            <a href="trabajos.html" class="w3-bar-item w3-button " style="width:33%">TRABAJOS</a>
-            <a href="contacto.html" class="w3-bar-item w3-button " style="width:33%">CONTACTO</a>
-        </div>
+        <nav class="navbar">
+            <div class="navbar-top">
+                <div class="top-section"> <a href="index.html">
+                        <img src="img/SDLOGONAV.png" alt="Logo Sofía Delmonte" class="img-fluid"
+                            style="max-width: 100px;">
+                    </a></div>
+                <div class="top-section"><a href="trabajos.html">TRABAJOS</a></div>
+                <div class="top-section"><a href="servicios.html">SERVICIOS</a></div>
+            </div>
+            <div class="navbar-top">
+                <div class="top-section"><a href="sobremi.html">SOBRE MÍ</a></div>
+                <div class="top-section"><a href="blog.html">BLOG</a></div>
 
-        <div class="text-center mt-4 mb-4">
+
+                <div class="top-section"><a href="contacto.html">CONTACTO</a></div>
+            </div>
+        </nav>
+
+
+
+        <!--<div class="text-center mt-4 mb-4">
             <a href="index.html">
                 <img src="img/Logonav.png" alt="Logo Sofía Delmonte" class="img-fluid" style="max-width: 200px;">
             </a>
-        </div>
+        </div>-->
     </header>
 
     <main class="container-fluid px-0">
@@ -129,7 +219,8 @@
 
                         <button type="submit" class="btn btn-light btn-lg">Enviar</button>
 
-                        <input type="hidden" name="_next" value="https://verdeverdad.github.io/Portfolio/index.html" target="_self">
+                        <input type="hidden" name="_next" value="https://verdeverdad.github.io/Portfolio/index.html"
+                            target="_self">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="box">
                     </form>
@@ -161,32 +252,32 @@
     </main>
 
     <footer class="p-4 mt-5 footer-custom">
-            <div class="row align-items-center">
+        <div class="row align-items-center">
 
-                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-1"><a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank"
-                            rel="noopener noreferrer">LinkedIn</a></p>
-                    <p class="mb-1"><a href="https://github.com/verdeverdad" target="_blank"
-                            rel="noopener noreferrer">GitHub</a></p>
-                    <p class="mb-0"><a href="https://wa.me/59899675402" target="_blank"
-                            rel="noopener noreferrer">WhatsApp</a></p>
-                </div>
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-1"><a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></p>
+                <p class="mb-1"><a href="https://github.com/verdeverdad" target="_blank"
+                        rel="noopener noreferrer">GitHub</a></p>
+                <p class="mb-0"><a href="https://wa.me/59899675402" target="_blank"
+                        rel="noopener noreferrer">WhatsApp</a></p>
+            </div>
 
-                <div class="col-md-4 text-center mb-3 mb-md-0">
-                    <a href="index.html">
-                        <img src="img/Logonav.png" alt="Logo Sofía Delmonte" class="img-fluid footer-logo">
-                    </a>
-                </div>
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <a href="index.html">
+                    <img src="img/Logonav.png" alt="Logo Sofía Delmonte" class="img-fluid footer-logo">
+                </a>
+            </div>
 
-                <div class="col-md-4 text-center text-md-end">
-                    <p class="mb-1"><a href="sobremi.html">Sobre mí</a></p>
-                    <p class="mb-1"><a href="trabajos.html">Trabajos</a></p>
-                    <p class="mb-1"><a href="contacto.html">Contacto</a></p>
-                    <p class="mb-1"><a href="index.html#blog">Blog</a></p>
-                    <p class="mb-0"><a href="como_trabajamos.html">Cómo trabajamos</a></p>
-                </div>
+            <div class="col-md-4 text-center text-md-end">
+                <p class="mb-1"><a href="sobremi.html">Sobre mí</a></p>
+                <p class="mb-1"><a href="trabajos.html">Trabajos</a></p>
+                <p class="mb-1"><a href="contacto.html">Contacto</a></p>
+                <p class="mb-1"><a href="index.html#blog">Blog</a></p>
+                <p class="mb-0"><a href="como_trabajamos.html">Cómo trabajamos</a></p>
+            </div>
 
-            
+
 
             <div class="text-center mt-4">
                 <p class="small">© 2025 SDWEB Sofía Delmonte</p>
@@ -200,9 +291,9 @@
 
     <script>
         function redireccionarInicio() {
-                alert("Gracias por su menaje. Te responderé a la brevedad. Puedes leer el blog y seguir navegando por la web.");
-window.location.href = "https://verdeverdad.github.io/Portfolio/index.html";
-            }
+            alert("Gracias por su menaje. Te responderé a la brevedad. Puedes leer el blog y seguir navegando por la web.");
+            window.location.href = "https://verdeverdad.github.io/Portfolio/index.html";
+        }
         document.addEventListener('DOMContentLoaded', (event) => {
             const formulario = document.querySelector("form");
             if (formulario) {
