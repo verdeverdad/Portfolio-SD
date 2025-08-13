@@ -47,20 +47,6 @@ thead{
   }
 
 
-.navbar,
-.nav-link {
-    color: var(--blanco);
-    background-color: var(--azul);
-    text-shadow: var(--negro);
-}
-
-.w3-bar {
-    color: var(--azul);
-}
-
-body {
-    background-color: var(--azul);
-}
 
 .img-container {
     text-align: center;
@@ -74,17 +60,7 @@ body {
     border-radius: 100%
   }
 
-.navbar {
-      /*background-color: #f5f5efee;*/
-      background-color: #f5f5efee;
-      /*font-size:100%;*/
-      color:var(--azul);
-      z-index: 11;
-    /*opacity: 90%;*/
-    -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
 
-  }
   
 .espaciador-del-navbar{
   /*z-index: 19;*/
