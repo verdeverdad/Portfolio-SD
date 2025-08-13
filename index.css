@@ -387,3 +387,31 @@ footer {
 }
 
 /* End: Video Responsive */
+
+.carousel {
+    
+    animation: slideAnimation 5s infinite; /* La animación inicial */
+    animation-play-state: paused; /* Estado por defecto: pausada */
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La clase que agregará JavaScript para activar la animación */
+.carousel-active {
+    animation-play-state: running;
+}
+
+/* Define la animación del carrusel */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(-300%); }
+}
