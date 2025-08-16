@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio de Sofía Delmonte">
+    <title>SDSTUDIO - Sofía Delmonte</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: var(--gris);
+            font-family: 'Raleway', sans-serif;
+            /* El padding-top es crucial para que el contenido no quede oculto bajo el navbar fijo */
+            /* Ajustado a la altura aproximada de tu navbar de dos filas */
+            padding-top: 90px;
+            margin: 0;
+        }
+
+        .page-title {
+            background-color: var(--azul);
+            color: var(--celeste-claro);
+            /* Se quita el margen superior ya que el padding del body lo maneja */
+            margin-top: 0;
+        }
+
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--gris);
+            color: var(--blanco);
+            z-index: 900;
+            /* La altura de la navbar es de aproximadamente 100px con los paddings */
+        }
+
+        .navbar-top,
+        .navbar-bottom {
+            display: flex;
+            width: 100%;
+            /* Ambas líneas ocupan todo el ancho del contenedor */
+            padding: 5px 0;
+            /* padding vertical, 0 horizontal */
+        }
+
+        .navbar-top {
+            display: flex;
+            width: 100%;
+            padding: 5px 0;
+
+            /* PROPIEDAD CLAVE: Alinea verticalmente todos los hijos al centro */
+            align-items: center;
+            background-color: var(--gris);
+        }
+
+        .navbar-bottom {
+            background-color: var(--gris);
+        }
+
+        .navbar a {
+            transition: transform 0.3s ease-in-out;
+
+            text-decoration: none;
+            color: var(--blanco);
+            /* Aprovechamos para definir también el color aquí */
+        }
+
+        .top-section {
+            width: 33.333%;
+            /* Cada sección ocupa un tercio del ancho */
+            text-align: center;
+            cursor: pointer;
+            /* PROPIEDAD CLAVE: Hace que la sección sea un contenedor flex... */
+            display: flex;
+
+            /* ...y centra su contenido tanto vertical como horizontalmente */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-section {
+            width: 50%;
+            /* Cada sección ocupa la mitad del ancho */
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            /* Agranda el texto a 1.2 veces su tamaño original */
+            transform: scale(1.5);
+        }
+
+        .active {
+            font-weight: bold;
+            transform: scale(1.1);
+
+        }
+
+        .footer-custom {
+            background-color: var(--gris);
+        }
+
+        .footer-custom a,
+        .footer-custom p {
+            color: var(--blanco);
+            text-decoration: none;
+        }
+
+        .footer-custom a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            max-width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-top">
+                <div class="top-section"> <a href="index.html">
+                        <img src="img/SDLOGONAV.png" alt="Logo Sofía Delmonte" class="img-fluid"
+                            style="max-width: 100px;"></a></div>
+                <div class="top-section"><a href="trabajos.html">TRABAJOS</a></div>
+                <div class="top-section"><a href="servicios.html">SERVICIOS</a></div>
+            </div>
+            <div class="navbar-top">
+                <div class="top-section active"><a href="sobremi.html">SOBRE MÍ</a></div>
+                <div class="top-section "><a href="blog.html">BLOG</a></div>
+                <div class="top-section"><a href="contacto.html">CONTACTO</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="my-3">
+            <h1 class="text-light text-center" style="background-color: darkgrey;">
+                SOBRE MÍ
+            </h1>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-12 col-md-8 col-lg-6 text-center mt-3">
+                    <img src="img/logo500.gif" class="img-fluid" alt="Logo animado">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 col-md-6 col-lg-3 mb-3 align-items-center justify-content-center">
+                    <div class="card p-3 d-flex align-items-center justify-content-center"
+                        style="background-color: var(--gris); color: var(--blanco);">
+                        <h5 class="text-center">Me inicié en IT gracias a Jóvenes
+                            a Programar (JaP), un programa del Plan Ceibal. Excelentes maestros.</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card p-3 d-flex align-items-center justify-content-center"
+                        style="background-color: var(--blanco); color: var(--gris);">
+                        <p class="text-center ">Fue un proyecto ocupacional que me cambió la vida. Abrí las puertas
+                            de una profesión pero aún mejor, una nueva pasión.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card p-3 d-flex align-items-center justify-content-center"
+                        style="background-color: var(--gris); color: var(--blanco);">
+                        <p class="text-center ">Uniéndome a una comunidad digital que, lejos de estar aislada,
+                            trabaja en equipo para progresar. La suma de los conocimientos de todos hace un mejor
+                            resultado.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card p-3 d-flex align-items-center justify-content-center"
+                        style="background-color: var(--blanco); color: var(--gris);">
+                        <h2 class="text-center ">La tecnología es mejor <br>cuando reúne a la gente.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12 col-lg-8 mb-3 ">
+                    <div class="card p-3" style="background-color: var(--blanco); color: var(--gris);">
+                        <p>Me dedico principalmente al <strong>diseño web UX/UI y a la programación front-end</strong>.
+                            Me encanta el proceso creativo de un producto, ver su evolución y trabajar para crear su
+                            mejor versión y cumplir con las necesidades del usuario. Trabajo el diseño y la programación
+                            casi a la par para poder ver en tiempo real cómo se ve el producto, poder hacer
+                            actualizaciones e iterar el diseño con mayor precisión.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3 ">
+                    <div class="card p-3" style="background-color: var(--gris); color: var(--blanco);">
+                        <p>Lo que más me gustó de entrar en el mundo de la tecnología es que me abrió el apetito del
+                            conocimiento, siempre hay algo para leer, un curso nuevo por hacer, lenguajes y herramientas
+                            por conocer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center text-light">
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card p-3" style="background-color: #6b7a922a;">
+                        <img src="img/quienes.7.gif" class="img-fluid w-50 mx-auto mb-3" alt="Animación">
+                        <h5>Somos el gran motor del cambio.</h5>
+                        <p class="">Estamos en constante mutación. Me gustan los desafíos y las herramientas para
+                            superarlos :D<br><strong>¡Hola mundo! ¡Aguante la web!</strong></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card p-3" style="background-color: #6b7a922a;">
+                        <img src="img/quienes.9.gif" class="img-fluid w-50 mx-auto mb-3" alt="Animación">
+                        <h5>Compartir es bueno, y con la tecnología digital, compartir es sencillo.</h5>
+                        <p class="">Rompiendo las barreras del tiempo y la distancia. Acercándonos.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card p-3" style="background-color: #6b7a922a;">
+                        <img src="img/quienes.8.gif" class="img-fluid w-50 mx-auto mb-3" alt="Animación">
+                        <h5>Sigue siendo magia aunque sepas cómo se hace.</h5>
+                        <p class="">"No se trata solo de diseñar productos que se vean y se sientan bien. Se trata
+                            de diseñar productos que cambien la vida de las personas."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5" style="background-color: var(--blanco);">
+            <div class="container py-4">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <a href="https://github.com/verdeverdad" target="_blank">
+                            <img src="img/git.png" style="width: 80px;" alt="GitHub">
+                        </a><br> GitHub
+                    </div>
+                    <div class="col-4">
+                        <a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank">
+                            <img src="img/images.png" style="width: 100px;" alt="LinkedIn">
+                        </a><br> LinkedIn
+                    </div>
+                    <div class="col-4">
+                        <a href="https://wa.me/59899675402" target="_blank">
+                            <img src="img/whatsapp_icon-icons.com_62680.png" style="width: 80px;" alt="WhatsApp">
+                        </a><br> WhatsApp
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-4" style="background-color: darkgrey;">
+            <h3 class="text-light text-center">
+                PUEDES VER MI CV <a
+                    href="https://acrobat.adobe.com/id/urn:aaid:sc:US:9695c710-b0af-4f92-8ad1-1c67cc9e8a70"
+                    target="_blank" class="font-weight-bold"
+                    style="color: var(--blanco); text-decoration: underline;">AQUÍ</a>
+            </h3>
+        </div>
+    </main>
+
+    <footer class="p-4 mt-5 footer-custom">
+        <div class="row align-items-center">
+
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-1"><a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></p>
+                <p class="mb-1"><a href="https://github.com/verdeverdad" target="_blank"
+                        rel="noopener noreferrer">GitHub</a></p>
+                <p class="mb-0"><a href="https://wa.me/59899675402" target="_blank"
+                        rel="noopener noreferrer">WhatsApp</a></p>
+            </div>
+
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <a href="index.html">
+                    <img src="img/Logonav.png" alt="Logo Sofía Delmonte" class="img-fluid footer-logo">
+                </a>
+            </div>
+
+            <div class="col-md-4 text-center text-md-end">
+                <p class="mb-1"><a href="sobremi.html">Sobre mí</a></p>
+                <p class="mb-1"><a href="trabajos.html">Trabajos</a></p>
+                <p class="mb-1"><a href="contacto.html">Contacto</a></p>
+                <p class="mb-1"><a href="blog.html">Blog</a></p>
+                <p class="mb-0"><a href="como_trabajamos.html">Cómo trabajamos</a></p>
+            </div>
+
+
+
+            <div class="text-center mt-4">
+                <p class=" text-center">© 2025 SDWEB Sofía Delmonte</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -3,153 +3,144 @@
 /*======================================*/
 
 :root {
-    --verde2: #569730;
+  --verde2: #569730;
 
-    --v: #6dd7b8;
+  --v: #6dd7b8;
 
-    --azul-claro: #29a6e7;
+  --azul-claro: #29a6e7;
 
-    --violeta: #31294d;
+  --violeta: #31294d;
 
 
-    --celeste: #52ace7;
-    --celeste-claro: #b6def8;
-  
-    --verde: #2cc08a;
-    --verde-claro: #7dd8b7;
-  
-    --blanco: #f5f5ef;
-    --negro: #212529;
-  
-    --azul: #293762;
-    --gris: #6b7a92;
-  }
-thead{
+  --celeste: #52ace7;
+  --celeste-claro: #b6def8;
+
+  --verde: #2cc08a;
+  --verde-claro: #7dd8b7;
+
+  --blanco: #f5f5ef;
+  --negro: #212529;
+
+  --azul: #293762;
+  --gris: #6b7a92;
+}
+
+thead {
   color: var(--v);
 }
-  .slider-container {
-    display:-moz-box;
-    width: 100%;
-    height: 70vh;
-    overflow-x: scroll;
-  
-    /* Vamos a añadir esto 👇 */
-    scroll-snap-type: x mandatory;
-  }
-  
-  .slider-container img {
-    flex: 0 0 40%;
-    width: 100%;
-    object-fit: cover;
-  
-    /* Vamos a añadir esto 👇 */
-    scroll-snap-align: center;
-  }
+
+.slider-container {
+  display: -moz-box;
+  width: 100%;
+  height: 70vh;
+  overflow-x: scroll;
+
+  /* Vamos a añadir esto 👇 */
+  scroll-snap-type: x mandatory;
+}
+
+.slider-container img {
+  flex: 0 0 40%;
+  width: 100%;
+  object-fit: cover;
+
+  /* Vamos a añadir esto 👇 */
+  scroll-snap-align: center;
+}
 
 
 
 .img-container {
-    text-align: center;
-    display: block;
-    max-width: 100%;
-    height: auto;
+  text-align: center;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
 .circular--square {
-    border-radius: 100%
-  }
-
-
-  
-.espaciador-del-navbar{
-  /*z-index: 19;*/
-  height: 96px;
-  /*background-color:greenyellow;*/
-  background-color:#f5f5ef;
+  border-radius: 100%
 }
 
 
-footer {
-      background-color: #f5f5ef;
-      
-    }
 
-    footer p {
-      color: var(--azul);
-    }
+.espaciador-del-navbar {
+  /*z-index: 19;*/
+  height: 96px;
+  /*background-color:greenyellow;*/
+  background-color: #f5f5ef;
+}
 
-    footer a{
-      text-decoration:none;
-      color: var(--azul);
-    }
+
 
 /*address {
       color: rgb(116, 101, 253);
     }*/
 
 .card {
-	flex: 1 200px;
-	margin-top: 30px;
-	margin-right: 30px;
-	margin-left: 30px;
-  opacity:95%; 
-	border: 2px solid #d5dadf;
+  flex: 1 200px;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  opacity: 95%;
+  border: 2px solid #d5dadf;
   border-radius: 5px;
-	box-shadow:  0px 0px 2px #ebf0f5;
-	animation: mymove 16s infinite;
+  box-shadow: 0px 0px 2px #ebf0f5;
+  animation: mymove 16s infinite;
+  height: 100%;
 }
 
 
 .titulo {
-      font-size: 240%;
-      opacity: 90%;
-      text-align: center;
-      text-shadow: 0px 1px 2px #00c3ff;
-      font-family: monospace;
-    
-    }
+  font-size: 240%;
+  opacity: 90%;
+  text-align: center;
+  text-shadow: 0px 1px 2px #00c3ff;
+  font-family: monospace;
 
-.tarjeta{
-      background-color: var(--negro);
-      opacity: 90%;
-      color: var(--blanco);
-    }
+}
+
+.tarjeta {
+  background-color: var(--negro);
+  opacity: 90%;
+  color: var(--blanco);
+}
 
 
-    /* ANIMACION DE BORDE DE TARJETAS*/
-		#myDIV,
-		#myDIV2,
-		#myDIV3,
-		#myDIV4 {
+/* ANIMACION DE BORDE DE TARJETAS*/
+#myDIV,
+#myDIV2,
+#myDIV3,
+#myDIV4 {
 
-			animation: mymove 16s infinite;
-			border: 4px solid #ebf0f5;
-		}
+  animation: mymove 16s infinite;
+  border: 4px solid #ebf0f5;
+}
 
 
 
 @keyframes mymove {
-			50% {
-				box-shadow:  5px 5px 15px #011f3d;
-				border-color: #011f3d;
-			}
+  50% {
+    box-shadow: 5px 5px 15px #011f3d;
+    border-color: #011f3d;
+  }
 
-		}
-    /* ANIMACION DE BORDE DE TARJETAS*/ 
-		
-/*Mensajes de confirmacion que se desvanecen*/	 
-.mensaje_informativo{
-	position: fixed;
-	top: 5em;
-	right: 0em;
-	z-index: 22;
-	opacity: 95%;
-}	
+}
+
+/* ANIMACION DE BORDE DE TARJETAS*/
+
+/*Mensajes de confirmacion que se desvanecen*/
+.mensaje_informativo {
+  position: fixed;
+  top: 5em;
+  right: 0em;
+  z-index: 22;
+  opacity: 95%;
+}
 
 .quienes {
-  opacity: 95%; 
-  background-color:#f3f3ef; 
+  opacity: 95%;
+  background-color: #f3f3ef;
   color: var(--azul);
 }
 
@@ -165,10 +156,10 @@ footer {
 /*=================================*/
 /*======= color celeste ======*/
 /*=================================*/
-.card-celeste{
-  color:var(--negro);
+.card-celeste {
+  color: var(--negro);
   /*background-color:#20a4fc46; */
-  background-color:var(--celeste-claro); 
+  background-color: var(--celeste-claro);
 }
 
 .btn-celeste {
@@ -176,16 +167,19 @@ footer {
   background-color: var(--celeste);
   border-color: var(--gris);
 }
+
 .btn-celeste:hover {
   color: var(--negro);
   background-color: var(--celeste-claro);
   border-color: var(--azul);
 }
+
 .btn-outline-celeste {
   color: var(--negro);
   background-color: var(--celeste-claro);
   border-color: var(--gris);
 }
+
 .btn-outline-celeste:hover {
   color: var(--blanco);
   background-color: var(--celeste);
@@ -195,32 +189,37 @@ footer {
 /*===============================*/
 /*======= color verde ======*/
 /*===============================*/
-.card-verde{
-  color:var(--azul);
-  background-color:var(--verde-claro); 
+.card-verde {
+  color: var(--azul);
+  background-color: var(--verde-claro);
 }
+
 .btn-azul2 {
   color: var(--azul);
   background-color: var(--v);
   border-color: var(--azul);
 }
+
 .btn-verde {
   color: var(--azul);
   background-color: var(--v);
   /*border: 2px solid var(--verde-claro);*/
   border-color: var(--verde);
 }
+
 .btn-verde:hover {
   color: var(--azul);
   background-color: var(--verde-claro);
   border-color: #2e6d56;
 }
+
 .btn-outline-verde {
   color: var(--azul);
   background-color: var(--v);
   /*border: 2px solid var(--gris);*/
   border-color: #e7f1ee;
 }
+
 .btn-outline-verde:hover {
   color: var(--blanco);
   background-color: var(--verde);
@@ -231,9 +230,9 @@ footer {
 /*===============================*/
 /*======= color blanco ======*/
 /*===============================*/
-.card-blanco{
-  color:var(--gris);
-  background-color:var(--blanco); 
+.card-blanco {
+  color: var(--gris);
+  background-color: var(--blanco);
 }
 
 .btn-blanco {
@@ -242,17 +241,20 @@ footer {
   /*border: 2px solid var(--verde-claro);*/
   border-color: #8694aa;
 }
+
 .btn-blanco:hover {
   color: var(--azul);
   background-color: var(--blanco);
   border-color: var(--gris);
 }
+
 .btn-outline-blanco {
   color: var(--azul);
   background-color: var(--blanco);
   /*border: 2px solid var(--gris);*/
   border-color: var(--gris);
 }
+
 .btn-outline-blanco:hover {
   color: var(--blanco);
   background-color: var(--gris);
@@ -263,9 +265,9 @@ footer {
 /*===============================*/
 /*======= color negro ======*/
 /*===============================*/
-.card-negro{
-  color:var(--verde-claro);
-  background-color:var(--negro); 
+.card-negro {
+  color: var(--verde-claro);
+  background-color: var(--negro);
 }
 
 .btn-negro {
@@ -273,16 +275,19 @@ footer {
   background-color: var(--negro);
   border-color: var(--verde-claro);
 }
+
 .btn-negro:hover {
   color: var(--azul);
   background-color: var(--blanco);
   border-color: #5267a7;
 }
+
 .btn-outline-negro {
   color: var(--verde-claro);
   background-color: var(--negro);
   border-color: var(--verde-claro);
 }
+
 .btn-outline-negro:hover {
   color: var(--negro);
   background-color: var(--verde-claro);
@@ -293,9 +298,9 @@ footer {
 /*===============================*/
 /*======= color azul ======*/
 /*===============================*/
-.card-azul{
-  color:var(--v);
-  background-color:var(--azul); 
+.card-azul {
+  color: var(--v);
+  background-color: var(--azul);
 }
 
 .btn-azul {
@@ -303,16 +308,19 @@ footer {
   background-color: var(--azul);
   border-color: var(--v);
 }
+
 .btn-azul:hover {
   color: var(--azul);
   background-color: var(--blanco);
   border-color: var(--azul);
 }
+
 .btn-outline-azul {
   color: var(--azul);
   background-color: var(--blanco);
   border-color: #5673ca;
 }
+
 .btn-outline-azul:hover {
   color: var(--v);
   background-color: var(--azul);
@@ -323,9 +331,9 @@ footer {
 /*===============================*/
 /*======= color gris ======*/
 /*===============================*/
-.card-gris{
-  color:var(--blanco);
-  background-color:var(--gris); 
+.card-gris {
+  color: var(--blanco);
+  background-color: var(--gris);
 }
 
 .btn-gris {
@@ -333,16 +341,19 @@ footer {
   background-color: var(--gris);
   border-color: var(--blanco);
 }
+
 .btn-gris:hover {
   color: var(--azul);
   background-color: var(--blanco);
   border-color: var(--gris);
 }
+
 .btn-outline-gris {
   color: var(--violeta);
   background-color: var(--gris);
   border-color: var(--negro);
 }
+
 .btn-outline-gris:hover {
   color: var(--blanco);
   background-color: var(--blanco);
@@ -353,18 +364,18 @@ footer {
 
 .btn-club {
   text-decoration: none;
-  padding:30px;
+  padding: 30px;
   font-weight: bold;
   font-size: 40px;
-  color:var(--blanco);
-  background:var(--negro);
-  border-radius:50px;
+  color: var(--blanco);
+  background: var(--negro);
+  border-radius: 50px;
   border: 2px solid var(--azul);
   transition: all 0.9s;
   text-align: center;
-  width:60%;
+  width: 60%;
   box-shadow: -5px 1px 3px 2px var(--v);
-  
+
 }
 
 /* Start: Video Responsive */
@@ -389,29 +400,42 @@ footer {
 /* End: Video Responsive */
 
 .carousel {
-    
-    animation: slideAnimation 5s infinite; /* La animación inicial */
-    animation-play-state: paused; /* Estado por defecto: pausada */
+
+  animation: slideAnimation 5s infinite;
+  /* La animación inicial */
+  animation-play-state: paused;
+  /* Estado por defecto: pausada */
 }
 
 .slide {
-    flex-shrink: 0;
-    width: 100%;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* La clase que agregará JavaScript para activar la animación */
 .carousel-active {
-    animation-play-state: running;
+  animation-play-state: running;
 }
 
 /* Define la animación del carrusel */
 @keyframes slideAnimation {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(-300%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(-100%);
+  }
+
+  66% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(-300%);
+  }
 }
