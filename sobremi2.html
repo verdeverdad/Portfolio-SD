@@ -1,315 +1,392 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portfolio de Sofía Delmonte">
-    <title>SDSTUDIO - Sofía Delmonte</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="description" content="">
+    <title>SDSTUDIO-Sofía Delmonte</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="Portfolio/node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <link href="Portfolio/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 
-    <style>
-        body {
-            background-color: var(--gris);
-            font-family: 'Raleway', sans-serif;
-            /* El padding-top es crucial para que el contenido no quede oculto bajo el navbar fijo */
-            /* Ajustado a la altura aproximada de tu navbar de dos filas */
-            padding-top: 90px;
-            margin: 0;
-        }
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-        .page-title {
-            background-color: var(--azul);
-            color: var(--celeste-claro);
-            /* Se quita el margen superior ya que el padding del body lo maneja */
-            margin-top: 0;
-        }
-
-
-        .navbar {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: var(--gris);
-            color: var(--blanco);
-            z-index: 900;
-            /* La altura de la navbar es de aproximadamente 100px con los paddings */
-        }
-
-        .navbar-top,
-        .navbar-bottom {
-            display: flex;
-            width: 100%;
-            /* Ambas líneas ocupan todo el ancho del contenedor */
-            padding: 5px 0;
-            /* padding vertical, 0 horizontal */
-        }
-
-        .navbar-top {
-            display: flex;
-            width: 100%;
-            padding: 5px 0;
-
-            /* PROPIEDAD CLAVE: Alinea verticalmente todos los hijos al centro */
-            align-items: center;
-            background-color: var(--gris);
-        }
-
-        .navbar-bottom {
-            background-color: var(--gris);
-        }
-
-        .navbar a {
-            transition: transform 0.3s ease-in-out;
-
-            text-decoration: none;
-            color: var(--blanco);
-            /* Aprovechamos para definir también el color aquí */
-        }
-
-        .top-section {
-            width: 33.333%;
-            /* Cada sección ocupa un tercio del ancho */
-            text-align: center;
-            cursor: pointer;
-            /* PROPIEDAD CLAVE: Hace que la sección sea un contenedor flex... */
-            display: flex;
-
-            /* ...y centra su contenido tanto vertical como horizontalmente */
-            align-items: center;
-            justify-content: center;
-        }
-
-        .bottom-section {
-            width: 50%;
-            /* Cada sección ocupa la mitad del ancho */
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        a:hover {
-            /* Agranda el texto a 1.2 veces su tamaño original */
-            transform: scale(1.5);
-        }
-
-        .active {
-            font-weight: bold;
-            transform: scale(1.1);
-
-        }
-
-        .footer-custom {
-            background-color: var(--gris);
-        }
-
-        .footer-custom a,
-        .footer-custom p {
-            color: var(--blanco);
-            text-decoration: none;
-        }
-
-        .footer-custom a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-logo {
-            max-width: 60%;
-        }
-    </style>
+    <!--<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <!-- endbuild -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: var(--gris);">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 
-    <header>
-        <nav class="navbar">
-            <div class="navbar-top">
-                <div class="top-section"> <a href="index.html">
-                        <img src="img/SDLOGONAV.png" alt="Logo Sofía Delmonte" class="img-fluid"
-                            style="max-width: 100px;"></a></div>
-                <div class="top-section"><a href="trabajos.html">TRABAJOS</a></div>
-                <div class="top-section"><a href="servicios.html">SERVICIOS</a></div>
-            </div>
-            <div class="navbar-top">
-                <div class="top-section active"><a href="sobremi.html">SOBRE MÍ</a></div>
-                <div class="top-section "><a href="blog.html">BLOG</a></div>
-                <div class="top-section"><a href="contacto.html">CONTACTO</a></div>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <div class="my-3">
-            <h1 class="text-light text-center" style="background-color: darkgrey;">
-                SOBRE MÍ
-            </h1>
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+
+
+    <div class="w3-bar sticky-top" style="color: var(--blanco); background-color: var(--gris);">
+
+        <a href="sobremi.html" class="w3-bar-item w3-button" style="width:33%">SOBRE MÍ</a>
+        <a href="trabajos.html" class="w3-bar-item w3-button" style="width:33%">TRABAJOS</a>
+        <a href="contacto.html" class="w3-bar-item w3-button" style="width:33%">CONTACTO</a>
+    </div>
+
+
+    <!--logo--v--logo--logo--logo--logo--logo--logo--logo-->
+    <!--logo--v--logo--logo--logo--logo--logo--logo--logo-->
+    <!--logo--v--logo--logo--logo--logo--logo--logo--logo-->
+    <div class="row d-flex">
+
+        <div class="col-sm-4 d-flex flex-column">
+
         </div>
 
-        <div class="container">
-            <div class="row justify-content-center ">
-                <div class="col-12 col-md-8 col-lg-6 text-center mt-3">
-                    <img src="img/logo500.gif" class="img-fluid" alt="Logo animado">
-                </div>
-            </div>
+        <div class="col-sm-4 d-flex flex-column align-items-center">
+            <a href="index.html" class="">
+                <img src="img/Logonav.png" class="img-fluid" style="display: block;margin-left: auto;margin-right: auto;"
+                    width="60%">
+            </a>
         </div>
 
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12 col-md-6 col-lg-3 mb-3 align-items-center justify-content-center">
-                    <div class="card p-3 d-flex align-items-center justify-content-center"
-                        style="background-color: var(--gris); color: var(--blanco);">
-                        <h5 class="text-center">Me inicié en IT gracias a Jóvenes
-                            a Programar (JaP), un programa del Plan Ceibal. Excelentes maestros.</h5>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3 ">
-                    <div class="card p-3 d-flex align-items-center justify-content-center"
-                        style="background-color: var(--blanco); color: var(--gris);">
-                        <p class="text-center ">Fue un proyecto ocupacional que me cambió la vida. Abrí las puertas
-                            de una profesión pero aún mejor, una nueva pasión.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3 ">
-                    <div class="card p-3 d-flex align-items-center justify-content-center"
-                        style="background-color: var(--gris); color: var(--blanco);">
-                        <p class="text-center ">Uniéndome a una comunidad digital que, lejos de estar aislada,
-                            trabaja en equipo para progresar. La suma de los conocimientos de todos hace un mejor
-                            resultado.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3 ">
-                    <div class="card p-3 d-flex align-items-center justify-content-center"
-                        style="background-color: var(--blanco); color: var(--gris);">
-                        <h2 class="text-center ">La tecnología es mejor <br>cuando reúne a la gente.</h2>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
 
-            <div class="row mb-4">
-                <div class="col-12 col-lg-8 mb-3 ">
-                    <div class="card p-3" style="background-color: var(--blanco); color: var(--gris);">
-                        <p>Me dedico principalmente al <strong>diseño web UX/UI y a la programación front-end</strong>.
-                            Me encanta el proceso creativo de un producto, ver su evolución y trabajar para crear su
-                            mejor versión y cumplir con las necesidades del usuario. Trabajo el diseño y la programación
-                            casi a la par para poder ver en tiempo real cómo se ve el producto, poder hacer
-                            actualizaciones e iterar el diseño con mayor precisión.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 mb-3 ">
-                    <div class="card p-3" style="background-color: var(--gris); color: var(--blanco);">
-                        <p>Lo que más me gustó de entrar en el mundo de la tecnología es que me abrió el apetito del
-                            conocimiento, siempre hay algo para leer, un curso nuevo por hacer, lenguajes y herramientas
-                            por conocer.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row text-center text-light">
-                <div class="col-12 col-lg-4 mb-4">
-                    <div class="card p-3" style="background-color: #6b7a922a;">
-                        <img src="img/quienes.7.gif" class="img-fluid w-50 mx-auto mb-3" alt="Animación">
-                        <h5>Somos el gran motor del cambio.</h5>
-                        <p class="">Estamos en constante mutación. Me gustan los desafíos y las herramientas para
-                            superarlos :D<br><strong>¡Hola mundo! ¡Aguante la web!</strong></p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 mb-4">
-                    <div class="card p-3" style="background-color: #6b7a922a;">
-                        <img src="img/quienes.9.gif" class="img-fluid w-50 mx-auto mb-3" alt="Animación">
-                        <h5>Compartir es bueno, y con la tecnología digital, compartir es sencillo.</h5>
-                        <p class="">Rompiendo las barreras del tiempo y la distancia. Acercándonos.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 mb-4">
-                    <div class="card p-3" style="background-color: #6b7a922a;">
-                        <img src="img/quienes.8.gif" class="img-fluid w-50 mx-auto mb-3" alt="Animación">
-                        <h5>Sigue siendo magia aunque sepas cómo se hace.</h5>
-                        <p class="">"No se trata solo de diseñar productos que se vean y se sientan bien. Se trata
-                            de diseñar productos que cambien la vida de las personas."</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <div class="container-fluid mt-5" style="background-color: var(--blanco);">
-            <div class="container py-4">
-                <div class="row text-center">
-                    <div class="col-4">
-                        <a href="https://github.com/verdeverdad" target="_blank">
-                            <img src="img/git.png" style="width: 80px;" alt="GitHub">
-                        </a><br> GitHub
-                    </div>
-                    <div class="col-4">
-                        <a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank">
-                            <img src="img/images.png" style="width: 100px;" alt="LinkedIn">
-                        </a><br> LinkedIn
-                    </div>
-                    <div class="col-4">
-                        <a href="https://wa.me/59899675402" target="_blank">
-                            <img src="img/whatsapp_icon-icons.com_62680.png" style="width: 80px;" alt="WhatsApp">
-                        </a><br> WhatsApp
-                    </div>
+    </div>
+
+    <!--titulo--v--titulo--titulo--titulo--titulo--titulo--titulo--titulo-->
+    <!--titulo--v--titulo--titulo--titulo--titulo--titulo--titulo--titulo-->
+    <!--titulo--v--titulo--titulo--titulo--titulo--titulo--titulo--titulo-->
+    <br>
+    <h1 class="text-light text-center" style="background-color: darkgrey;">
+        SOBRE MÍ
+    </h1><br>
+
+    <div class="container-fluid m-0">
+
+        <!--foto perfil--v--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil-->
+        <!--foto perfil--v--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil-->
+        <!--foto perfil--v--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil--foto perfil-->
+
+        <div class="row m-0" style="background-color: var(--gris);">
+
+            <div class="col-sm-4 " style="background-color: var(--gris);">
+
+            </div>
+
+
+            <div class="col-sm-4 " style="background-color: var(--gris);">
+                <img src="img/logo500.gif" class="align-items-center" alt="Responsive" width="100%">
+
+            </div>
+
+
+            <div class="col-sm-4 " style="background-color: var(--gris);">
+
+            </div>
+
+        </div><br>
+
+        <!--primera fila-->
+        <div class="d-flex flex-wrap flex-row">
+            <div class="card d-flex flex-column justify-content-between"
+                style="width: 10rem; background-color: var(--gris); color: var(--blanco);">
+                <div class="card-body">
+                    <h5 class="text-center">Me inicié en IT gracias a Jovenes a Programar (JaP) un programa del Plan
+                        Ceibal
+                        (los que llevaron las compu a los niñxs en a las escuelas). Excelentes maestros.</h5>
+                </div>
+            </div>
+            <div class=" card d-flex flex-column justify-content-between"
+                style="width: 10rem; background-color: var(--blanco); color: var(--gris);">
+                <div class="card-body">
+                    <h5 class="text-center">Fué un proyecto ocupacional que me cambió la vida. Abrí las puertas de una
+                        profesión pero aún mejor una nueva pasión.</h5>
+                </div>
+            </div>
+
+            <div class="card d-flex flex-column justify-content-between"
+                style="width: 10rem; background-color: var(--gris); color: var(--blanco);">
+                <div class="card-body">
+                    <h5 class="text-center">Uniendome a una comunidad digital que lejos de estar aislada trabaja en
+                        equipo
+                        para progresar. La suma de los conocimientos de todxs hace un
+                        mejor resultado.</h5>
+                </div>
+            </div>
+
+            <div class="card d-flex flex-column justify-content-between"
+                style="width: 10rem; background-color: var(--blanco); color: var(--gris);">
+                <div class="card-body">
+
+                    <h2 class="text-center">La tecnología es mejor <br>cuando reúne a la gente.</h2>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid py-4" style="background-color: darkgrey;">
-            <h3 class="text-light text-center">
-                PUEDES VER MI CV <a
-                    href="https://acrobat.adobe.com/id/urn:aaid:sc:US:9695c710-b0af-4f92-8ad1-1c67cc9e8a70"
-                    target="_blank" class="font-weight-bold"
-                    style="color: var(--blanco); text-decoration: underline;">AQUÍ</a>
-            </h3>
-        </div>
-    </main>
+        <!--segunda fila-->
+        <div class="d-flex flex-wrap flex-row">
 
-    <footer class="p-4 mt-5 footer-custom">
-        <div class="row align-items-center">
-
-            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                <p class="mb-1"><a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a></p>
-                <p class="mb-1"><a href="https://github.com/verdeverdad" target="_blank"
-                        rel="noopener noreferrer">GitHub</a></p>
-                <p class="mb-0"><a href="https://wa.me/59899675402" target="_blank"
-                        rel="noopener noreferrer">WhatsApp</a></p>
+            <div class="card d-flex flex-column justify-content-between"
+                style="width: 10rem; background-color: var(--blanco); color: var(--gris);">
+                <div class="card-body">
+                    <br>
+                    <h5 class="text-center">Me dedico principalmente al diseño web ux/ui
+                        y a la programación front-end. Me encanta el proceso creativo de un producto,
+                        ver su evolución y trabajar
+                        para crear su
+                        mejor versión y cumplir con las necesidades del usuario.
+                    </h5>
+                </div>
+            </div>
+            <div class="card d-flex flex-column justify-content-between"
+                style="width: 10rem; background-color: var(--gris); color: var(--blanco);">
+                <div class="card-body">
+                    <h5 class="text-center">Trabajo el diseño y la programación, un poco desfazados pero casi a la par,
+                        para poder ver en tiempo real como se ve el producto, poder hacer actualizaciones e iterar el
+                        diseño
+                        con
+                        mayor precisión además de ampliar la cratividad del diseño.</h5>
+                </div>
+            </div>
+            <div class=" card d-flex flex-column justify-content-between"
+                style="width: 10rem; background-color: var(--blanco); color: var(--gris);">
+                <div class="card-body">
+                    <h5 class="text-center">Comencé con proyectos en programación pero sentía que me faltaba
+                        conocimiento para poder presentar un
+                        producto accesible, intuitivo y fácil de navegar. Entonces me sumergí en el mundo UX y ahora
+                        estoy
+                        enamorada de ambos.</h5>
+                </div>
+            </div>
+            <div class="card d-flex flex-column justify-content-between"
+                style="width: 10rem; background-color: var(--gris); color: var(--blanco);">
+                <div class="card-body">
+                    <br>
+                    <h5 class="text-center">Lo que más me gustó de entrar en el mundo de la tecnología es que me
+                        abrió el apetito del conocimiento, siempre hay algo para leer, un curso nuevo por hacer,
+                        lenguajes y herramientas por conocer.</h5>
+                </div>
             </div>
 
-            <div class="col-md-4 text-center mb-3 mb-md-0">
-                <a href="index.html">
-                    <img src="img/Logonav.png" alt="Logo Sofía Delmonte" class="img-fluid footer-logo">
+        </div>
+
+
+        <!--Somos el gran motor del cambio.-->
+        <div class="d-flex flex-wrap flex-row">
+
+            <!--Somos el gran motor del cambio.-->
+            <div class="card d-flex flex-column justify-content-between align-items-center"
+                style="background-color: #6b7a922a; color: var(--blanco);">
+                <img src="img/quienes.7.gif" class="" alt="Responsive" width="50%">
+                <div class="card-body"><br>
+                    <h4 class="text-center">Somos el gran motor del cambio.</h4><br>
+                    <p class="text-center fs-5">Estamos en constante mutación, estudiando, leyendo, preguntando,
+                        buscando,
+                        imaginando, proyectando. La magia de tener que superarse día a día hace que los proyectos
+                        terminados
+                        sean una experiencia enriquecedora y satisfactoria. Me gustan los desafíos y las herramientas
+                        para superarlos :D <br><strong>¡Hola mundo! ¡Aguante la web!</strong><br></p>
+
+
+                    <br>
+                </div>
+                <div class="card-footer">
+                    <h4 class="text-center">¡Tenes la libertad de crear el perfil que quieras!</h4>
+                </div>
+            </div>
+            <!--Compartir es bueno,-->
+            <div class="card d-flex flex-column justify-content-between align-items-center"
+                style="background-color: #6b7a922a; color: var(--blanco);">
+                <img src="img/quienes.9.gif" class="" alt="Responsive" width="50%">
+                <div class="card-body">
+                    <br>
+                    <h4 class="text-center">Compartir es bueno, y con la tecnología digital, compartir es sencillo.</h4>
+                    <br>
+                    <h5 class="text-center">Rompiendo las barreras <br>del tiempo y la distancia.</h5><br>
+                    <h3 class="text-center"> Acercándonos</h3>
+                </div>
+                <div class="card-footer">
+                    <h5 class="text-center">Tenemos
+                        la obligación
+                        de crear ese lugar donde todos quepamos.</h5>
+                </div>
+            </div>
+            <!--Sigue siendo magia-->
+            <div class="card d-flex flex-column justify-content-between align-items-center"
+                style="background-color: #6b7a922a; color: var(--blanco);">
+                <img src="img/quienes.8.gif" class="" alt="Responsive" width="50%">
+                <div class="card-body"><br>
+                    <h3 class="text-center">Sigue siendo magia aunque sepas cómo se hace.</h3>
+                    <figcaption class="blockquote-footer" style="color: var(--blanco);">
+                        Terry Pratchett.
+                    </figcaption><br>
+                    <h5 class="text-center">"No se trata solo de diseñar productos que se vean y se sientan bien. Se
+                        trata
+                        de diseñar productos que cambien la vida de las personas." </h5>
+                    <figcaption class="blockquote-footer" style="color: var(--blanco);">
+                        Steve Jobs.<br>
+                    </figcaption>
+                </div>
+                <div class="card-footer">
+                    <h4 class="text-center">¡Tenemos que hackear a los estereotipos!</h4>
+                </div>
+            </div>
+
+        </div><br>
+
+
+        <!-- PIE DE FOTOS  -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 text-center">
+
+                    <figure class="text-center" style="color: var(--blanco);">
+                        <blockquote class="blockquote">
+                            <h4 class="text-center">Un buen diseño hace la vida mejor.</h4>
+                        </blockquote>
+                        <figcaption class="blockquote-footer" style="color: var(--blanco);">
+                            @SDWeb-Sofía Delmonte<br>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4"></div>
+
+            </div>
+        </div>
+
+        <!-- iconos gh li wh- iconos gh li wh- iconos gh li wh- iconos gh li wh-->
+        <!-- iconos gh li wh- iconos gh li wh- iconos gh li wh- iconos gh li wh-->
+        <!-- iconos gh li wh- iconos gh li wh- iconos gh li wh- iconos gh li wh-->
+        <div class="row mt-3" style="background-color: var(--blanco);">
+            <div class="col-sm-3"></div>
+
+            <div class="col-sm-6 mt-5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-4 text-center mb-5"><a href="https://github.com/verdeverdad"
+                                target="_blank"><img src="img/git.png" class="card-img-top" style="width:100px ;"
+                                    alt="Responsive"></a><br> GitHub
+                        </div>
+                        <div class="col-sm-4 text-center mb-5"><a
+                                href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank"><img
+                                    src="img/images.png" class="card-img-top" style="width:120px ;"
+                                    alt="Responsive"></a><br>LinkedIn
+                        </div>
+                        <div class="col-sm-4 text-center mb-5"><a href="https://wa.me/59899675402" target="_blank"> <img
+                                    src="img/whatsapp_icon-icons.com_62680.png" class="card-img-top"
+                                    style="width:100px ;" alt="Responsive"></a><br>WhatsApp
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3"></div>
+
+            </div>
+        </div>
+
+    </div><br>
+
+    <h3 class="text-light text-center" style="background-color: darkgrey;">
+        PUEDES VER MI CV <a
+            href="https://acrobat.adobe.com/id/urn:aaid:sc:US:9695c710-b0af-4f92-8ad1-1c67cc9e8a70"
+            class="link" style="color: var(--blanco); font-style: oblique;">AQUÍ</a>
+    </h3><br>
+   
+    <!--como trabajamos
+
+    <div class="row d-flex">
+
+        <div class="col-sm-4 d-flex flex-column">
+
+        </div>
+
+        <div class="col-sm-4 d-flex flex-column align-items-center">
+            <a href="como_trabajamos.html" class="btn btn-outline-light btn-lg align-items-center"><strong>¿Cómo
+                    trabajamos?</strong></a>
+        </div>
+
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+
+        </div>
+
+    </div>
+    <div class="row d-flex">
+
+        <div class="col-sm-4 d-flex flex-column">
+
+        </div>
+
+        <div class="col-sm-4 d-flex flex-column align-items-center">
+            <a href="como_trabajamos.html" class="btn-verde btn-lg align-items-center"><strong>TRABAJOS</strong></a>
+        </div>
+
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+
+        </div>
+
+    </div>-->
+    <br>
+
+    <!--footer--v--footer--footer--footer--footer--footer--footer--footer-->
+    <!--footer--v--footer--footer--footer--footer--footer--footer--footer-->
+    <!--footer--v--footer--footer--footer--footer--footer--footer--footer-->
+    <footer class="p-1" style="background-color: var(--gris);">
+
+        <div class="row d-flex">
+
+            <div class="col-sm-4 d-flex flex-column">
+                <p><a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank"
+                        style=" color: var(--blanco);">LinkedIn</a></p>
+
+                <p><a href="https://github.com/verdeverdad" target="_blank" style=" color: var(--blanco);">GitHub</a>
+                </p>
+                <p><a href="https://wa.me/59899675402" target="_blank" style=" color: var(--blanco);">WhatsApp</a></p>
+
+            </div>
+
+            <div class="col-sm-4 d-flex flex-column align-items-center">
+                <a href="index.html" class="">
+                    <img src="img/Logonav.png" class="img-fluid"
+                        style="display: block;margin-left: auto;margin-right: auto;" width="60%">
                 </a>
             </div>
 
-            <div class="col-md-4 text-center text-md-end">
-                <p class="mb-1"><a href="sobremi.html">Sobre mí</a></p>
-                <p class="mb-1"><a href="trabajos.html">Trabajos</a></p>
-                <p class="mb-1"><a href="contacto.html">Contacto</a></p>
-                <p class="mb-1"><a href="blog.html">Blog</a></p>
-                <p class="mb-0"><a href="como_trabajamos.html">Cómo trabajamos</a></p>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <p><a href="sobremi.html" style=" color: var(--blanco);">Sobre mi</a></p>
+                <p><a href="trabajos.html" style=" color: var(--blanco);">Trabajos</a></p>
+                <p><a href="contacto.html" style=" color: var(--blanco);">Contacto</a></p>
+                <p><a href="index.html#blog" style=" color: var(--blanco);">Blog</a></p>
+				<p><a href="como_trabajamos.html" style=" color: var(--blanco);">Como trabajamos</a></p>
             </div>
 
+        </div>
 
-
-            <div class="text-center mt-4">
-                <p class=" text-center">© 2025 SDWEB Sofía Delmonte</p>
-            </div>
+        <div class="text-center">
+            <p class="small" style="color: var(--blanco);">© 2023 SDWEB Sofía Delmonte</p>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
