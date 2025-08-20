@@ -16,23 +16,14 @@
     <link href="../index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <style>
-        :root {
-
-            --fondo-form: rgba(89, 173, 247, 0.397);
-        }
-
+   <style>
         body {
             background-color: var(--violeta);
-            /* Añadido para evitar que el contenido se oculte debajo del navbar fijo */
-
             margin: 0;
             padding-top: 90px;
             /* Asegúrate de que este valor sea igual a la altura de tu navbar */
             font-family: sans-serif;
         }
-
-
 
         .page-title {
             background-color: var(--v);
@@ -40,43 +31,6 @@
             /* Se quita el margen superior ya que el padding del body lo maneja */
             margin-top: 0;
         }
-
-
-        .social-icons {
-            background-color: var(--blanco);
-        }
-
-        .social-icons img {
-            width: 100px;
-            transition: transform 0.2s;
-        }
-
-        .social-icons a:hover img {
-            transform: scale(1.1);
-        }
-
-        .social-icons .linkedin-icon {
-            width: 120px;
-        }
-
-        .footer-custom {
-            background-color: var(--violeta);
-        }
-
-        .footer-custom a {
-            color: var(--v);
-            text-decoration: none;
-        }
-
-        .footer-custom a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-logo {
-            max-width: 60%;
-        }
-
-
 
         .navbar {
             width: 100%;
@@ -86,8 +40,6 @@
             background-color: var(--violeta);
             color: var(--v);
             z-index: 900;
-            transition: transform 0.3s ease-in-out;
-
             /* La altura de la navbar es de aproximadamente 100px con los paddings */
         }
 
@@ -98,8 +50,6 @@
             /* Ambas líneas ocupan todo el ancho del contenedor */
             padding: 5px 0;
             /* padding vertical, 0 horizontal */
-            transition: transform 0.3s ease-in-out;
-
         }
 
         .navbar-top {
@@ -107,18 +57,19 @@
             width: 100%;
             padding: 5px 0;
 
-
+            /* PROPIEDAD CLAVE: Alinea verticalmente todos los hijos al centro */
+            align-items: center;
             background-color: var(--violeta);
         }
 
         .navbar-bottom {
-            background-color: var(--violeta);
-
+            background-color: var(--celeste-claro);
         }
 
-        a {
+        .navbar a, a {
             text-decoration: none;
             transition: transform 0.3s ease-in-out;
+            color: var(--v)
         }
 
         .top-section {
@@ -126,9 +77,12 @@
             /* Cada sección ocupa un tercio del ancho */
             text-align: center;
             cursor: pointer;
-            transition: transform 0.3s ease-in-out;
+            /* PROPIEDAD CLAVE: Hace que la sección sea un contenedor flex... */
+            display: flex;
 
-
+            /* ...y centra su contenido tanto vertical como horizontalmente */
+            align-items: center;
+            justify-content: center;
         }
 
         .bottom-section {
@@ -137,26 +91,35 @@
             text-align: center;
             text-decoration: none;
             cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-
         }
 
-        a:hover,
-        .top-section:hover,
-        .bottom-section:hover {
+        a:hover {
             /* Agranda el texto a 1.2 veces su tamaño original */
-            transform: scale(1.3);
-            color: var(--violeta);
-        }
-
-        main {
-            padding: 5px;
+            transform: scale(1.5);
         }
 
         .active {
             font-weight: bold;
-            transform: scale(1.3);
+            transform: scale(1.2);
 
+        }
+
+        .footer-custom {
+            background-color: var(--violeta);
+        }
+
+        .footer-custom a,
+        .footer-custom p {
+            color: var(--v);
+            text-decoration: none;
+        }
+
+        .footer-custom a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            max-width: 60%;
         }
     </style>
 
@@ -169,19 +132,19 @@
     <header>
         <nav class="navbar">
             <div class="navbar-top">
-                <div class="top-section"> <a href="index.html">
+                <div class="top-section"> <a href="../index.html">
                         <img src="../img/SDLOGONAV.png" alt="Logo Sofía Delmonte" class="img-fluid"
                             style="max-width: 100px;">
                     </a></div>
-                <div class="top-section"><a href="trabajos.html">TRABAJOS</a></div>
-                <div class="top-section"><a href="servicios.html">SERVICIOS</a></div>
+                <div class="top-section"><a href="../trabajos.html">TRABAJOS</a></div>
+                <div class="top-section"><a href="../servicios.html">SERVICIOS</a></div>
             </div>
             <div class="navbar-top">
-                <div class="top-section"><a href="sobremi.html">SOBRE MÍ</a></div>
-                <div class="top-section active"><a href="blog.html">BLOG</a></div>
+                <div class="top-section"><a href="../sobremi.html">SOBRE MÍ</a></div>
+                <div class="top-section active"><a href="../blog.html">BLOG</a></div>
 
 
-                <div class="top-section"><a href="contacto.html">CONTACTO</a></div>
+                <div class="top-section"><a href="../contacto.html">CONTACTO</a></div>
             </div>
         </nav>
     </header>

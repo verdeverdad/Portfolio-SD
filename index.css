@@ -359,7 +359,24 @@ thead {
   border-color: var(--negro);
 }
 
+/*===============================*/
+/*======= color violeta ======*/
+/*===============================*/
+.card-violeta {
+    background-color: #4335757a;
 
+}
+.btn-violeta {
+  color: var(--v);
+    background-color: var(--violeta);
+  border-color: var(--v);
+}
+
+.btn-violeta:hover {
+  color: var(--verde);
+  background-color: var(--blanco);
+  border-color: #5267a7;
+}
 
 .btn-club {
   text-decoration: none;

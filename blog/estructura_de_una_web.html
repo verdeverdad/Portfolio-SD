@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la estructura de una web y que no te puede faltar para que sea efectiva">
+    <title>Estructura de una web - Blog SDSTUDIO</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="canonical" href="https://www.sdstudio.click/blog/estructura_de_una_web.html">
+
+    <meta property="og:title" content="Estructura de una web">
+    <meta property="og:description"
+        content="Descubre la estructura de una web y que no te puede faltar para que sea efectiva">
+    <meta property="og:url" content="https://www.sdstudio.click/blog/estructura_de_una_web.html">
+    <meta property="og:image" content="https://www.sdstudio.click/img/estructura_de_una_web.png">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Estructura de una web">
+    <meta name="twitter:description"
+        content="Descubre la estructura de una web y que no te puede faltar para que sea efectiva">
+    <meta name="twitter:image" content="https://www.sdstudio.click/img/estructura_de_una_web.png">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        body {
+            background-color: var(--violeta);
+            margin: 0;
+            padding-top: 90px;
+            /* Asegúrate de que este valor sea igual a la altura de tu navbar */
+            font-family: sans-serif;
+        }
+
+        .page-title {
+            background-color: var(--v);
+            color: var(--violeta);
+            /* Se quita el margen superior ya que el padding del body lo maneja */
+            margin-top: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--violeta);
+            color: var(--v);
+            z-index: 900;
+            /* La altura de la navbar es de aproximadamente 100px con los paddings */
+        }
+
+        .navbar-top,
+        .navbar-bottom {
+            display: flex;
+            width: 100%;
+            /* Ambas líneas ocupan todo el ancho del contenedor */
+            padding: 5px 0;
+            /* padding vertical, 0 horizontal */
+        }
+
+        .navbar-top {
+            display: flex;
+            width: 100%;
+            padding: 5px 0;
+
+            /* PROPIEDAD CLAVE: Alinea verticalmente todos los hijos al centro */
+            align-items: center;
+            background-color: var(--violeta);
+        }
+
+        .navbar-bottom {
+            background-color: var(--violeta);
+        }
+
+        .navbar a,
+        a {
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+            color: var(--v)
+        }
+
+        .top-section,
+        .bottom-section {
+            width: 33.333%;
+            /* Cada sección ocupa un tercio del ancho */
+            text-align: center;
+            cursor: pointer;
+            /* PROPIEDAD CLAVE: Hace que la sección sea un contenedor flex... */
+            display: flex;
+
+            /* ...y centra su contenido tanto vertical como horizontalmente */
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        a:hover {
+            /* Agranda el texto a 1.2 veces su tamaño original */
+            transform: scale(1.5);
+        }
+
+        .active {
+            font-weight: bold;
+            transform: scale(1.2);
+
+        }
+
+        .footer-custom {
+            background-color: var(--violeta);
+        }
+
+        .footer-custom a,
+        .footer-custom p {
+            color: var(--v);
+            text-decoration: none;
+        }
+
+        .footer-custom a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            max-width: 60%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-top">
+                <div class="top-section">
+                    <a href="../index.html">
+                        <img src="../img/SDLOGONAV.png" alt="Logo SDSTUDIO Sofía Delmonte" class="img-fluid"
+                            style="max-width: 100px;">
+                    </a>
+                </div>
+                <div class="top-section"><a href="../trabajos.html">TRABAJOS</a></div>
+                <div class="top-section"><a href="../servicios.html">SERVICIOS</a></div>
+            </div>
+            <div class="navbar-bottom">
+                <div class="bottom-section"><a href="../sobremi.html">SOBRE MÍ</a></div>
+                <div class="bottom-section active"><a href="../blog.html">BLOG</a></div>
+                <div class="bottom-section"><a href="../contacto.html">CONTACTO</a></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center" style="background-color: var(--v); color: var(--violeta);">
+            ESTRUCTURA DE UNA WEB
+        </h1>
+
+        <div class="container">
+
+            <div class="card card-violeta">
+                <div class="p-5">
+                    <img class="img-fluid w-75 mx-auto mb-1 d-block" src="../img/estructura.png"
+                        alt="Estructura de una web" style="max-width:50%;" />
+
+                    <h4 class="text-center" style="color:#f3f3ff">
+                        Pero... ¿de que hablas?
+                    </h4>
+                    
+                    <p class="text-center " style="color:#f3f3ff">Cuando hablamos de la estructura de una web,
+                        nos referimos a lo que no puede faltar en una web;
+                        son los elementos básicos
+                        que el usuario está acostumbrado y que está esperando encontrar en una web,
+                        que tienen una jerarquía o un orden de importancia.
+                        Aquí te va un poco de info más unas recomendaciones para que puedas
+                        tener en cuenta a la hora de crear tu web.
+                    </p>
+                     <br>
+                    <hr><br>
+                    <h4 class="text-center" style="color:#7dd8b7">
+                        ENCABEZADO Y MENÚ
+                    </h4>
+                    <p class="text-center " style="color:#7dd8b7">El
+                        encabezado es la parte superior de la pagina
+                        web, normalmente es lo
+                        primero que ven los visitantes y se suele
+                        encontrar el logo o el nombre de la marca y el
+                        menú del sitio web.
+                        Se recomienda que al hacer click en el logo se
+                        diriga a la página de
+                        inicio ya que es una acción estandarizada de las
+                        páginas web.
+                    </p>
+
+                    <p class="text-center" style="color:#7dd8b7">El menú es
+                        un mapa del sitio
+                        que ayuda o guía a los usuarios para ubicarse y
+                        encontrar lo que
+                        buscan en la
+                        pagina web. Es un cuadro de búsqueda rápido y
+                        casi siempre se
+                        encuentran en
+                        los mismos lugares porque los usuarios de
+                        internet ya estan
+                        familiarizados con
+                        su uso.<br> Existen diferentes tipos de menú,
+                        los más comunes
+                        aparecen en el encabezado e incluyen las paginas
+                        mas importantes del
+                        sitio. <br> <strong>Se deben incluir las categorías
+                            adecuadas en el menú dentro del
+                            encabezado para ayudar a
+                            a tus usuarios a encontrar lo
+                            que buscan.</strong> </p>
+
+                    <br>
+                    <hr><br>
+
+                    <h4 class="text-center " style="color:#f3f3ff">
+                        IMAGENES
+                    </h4>
+
+                    <p class="text-center " style="color:#f3f3ff;">Lo que
+                        realmente atrapa son las imágenes, son lo
+                        primero que ve un usuario
+                        después del encabezado. Las imágenes que elijas
+                        deben representar lo que hace tu negocio o
+                        marca.
+                    </p>
+
+                    <p class="text-center" style="color:#f3f3ff">Se
+                        recomienda buscar un
+                        equilibrio y simplificar para
+                        no abusar de este recurso, demasiadas imagenes
+                        requieren más
+                        descarga y enlentece la navegación de la
+                        pagina web. Los
+                        usuarios modernos no tienen suficiente
+                        paciencia.
+                    </p>
+
+                    <br>
+                    <hr><br>
+
+
+                    <!--CONTENIDO -->
+                    <!--CONTENIDO -->
+                    <!--CONTENIDO -->
+
+                    <h4 class="text-center " style="color:#7dd8b7">
+                        CONTENIDO
+                    </h4>
+
+                    <p class="" style="color:#7dd8b7">El
+                        contenido son las palabras escritas en tu sitio.
+                        Explican de que se
+                        trata, que tienes para ofrecer y porque es
+                        importante para los
+                        visitantes.<br>
+                        Tiene diferentes funciones, botones, parrafos,
+                        menú, títulos, desde
+                        lo más breve hasta largas explicaciones, requiere tiempo
+                        planificar cuidadosamente el contenido del
+                        sitio web. Siempre puedes
+                        actualizar tu contenido o mejorarlo, es lo recomendado.
+                    </p>
+
+                    <p class="text-center" style="color:#7dd8b7">Algunos
+                        consejos: recuerda
+                        que tu usuario
+                        necesita que le resuelvas un problema, tus
+                        palabras deben ser más
+                        que intentar venderle. Necesitas conectarte con
+                        el visitante,
+                        intenta
+                        que tus palabras sean atractivas y útiles,
+                        transmíteles confianza
+                        sin intimidarlos, piensa cual sería el lenguaje
+                        adecuado para tu
+                        publico y lo último y no menos importante, no
+                        presumas lo bueno que
+                        eres, mejor consigue testimonios y comentarios
+                        de tus clientes.
+                    </p>
+
+
+                    <br>
+                    <hr>
+                    <br>
+
+
+                    <!--PAGINA DE INICIO -->
+                    <!--PAGINA DE INICIO -->
+                    <!--PAGINA DE INICIO -->
+
+                    <h4 class="text-center " style="color:#f3f3ff">
+                        PAGINA DE INICIO
+                    </h4>
+
+                    <p class="text-center " style="color:#f3f3ff">La página
+                        de inicio es lo primero que ven los visitantes,
+                        será lo que
+                        les generará la primera impresion. Debe
+                        comunicar tu mensaje
+                        principal al instante y mantenerlos
+                        interesados.
+                    </p>
+
+                    <p class="text-center" style="color:#f3f3ff">Se
+                        recomienda que se
+                        mantenga
+                        limpia y organizada, con una presentación que
+                        invite a explorar
+                        otras secciones. No es conveniente que sea muy
+                        extensa hacia abajo
+                        porque
+                        no se entenderá donde termina, mejor
+                        organiza y agrupa los
+                        contenidos y con una breve reseña y un link los
+                        invitas a saber mas.
+                    </p>
+
+
+                    <br>
+                    <hr>
+                    <br>
+
+
+                    <!-- FOOTER -->
+                    <!-- FOOTER -->
+                    <!-- FOOTER -->
+
+                    <h4 class="text-center " style="color:#7dd8b7">
+                        PIE DE PAGINA / FOOTER
+                    </h4>
+
+                    <p class="text-center " style="color:#7dd8b7">Es la
+                        parte inferior de la pagina web, normalmente
+                        incluye un mapa del
+                        sitio donde puedes agregar las secciones que no
+                        están en el menú
+                        superior.
+                    </p>
+
+                    <p class="text-center" style="color:#7dd8b7">Casi
+                        siempre se incluye
+                        información básica de contacto y redes sociales.
+                        Sirve como un medio de enlace entre el usuario y
+                        la marca ya que
+                        tiene los datos específicos de contacto.<br><br>
+                        - Identificación del autores<br> - Enlaces de
+                        interés<br> -
+                        Información sobre copyright<br>- Aviso sobre
+                        políticas de privacidad
+                        <br> -Datos de contacto<br>- Mapa del sitio
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+    <footer class="p-4 mt-5 footer-custom">
+        <div class="row align-items-center">
+
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-1"><a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank"
+                        rel="noopener noreferrer">LINKEDIN</a></p>
+                <p class="mb-1"><a href="https://github.com/verdeverdad" target="_blank"
+                        rel="noopener noreferrer">GITHUB</a></p>
+                <p class="mb-0"><a href="https://wa.me/59899675402" target="_blank"
+                        rel="noopener noreferrer">WHATSAPP</a></p>
+            </div>
+
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <a href="index.html">
+                    <img src="../img/Logonav.png" alt="Logo SDSTUDIOSofía Delmonte" class="img-fluid footer-logo">
+                </a>
+            </div>
+
+            <div class="col-md-4 text-center text-md-end">
+                <p class="mb-1"><a href="index.html">INICIO</a></p>
+                <p class="mb-1"><a href="trabajos.html">TRABAJOS</a></p>
+                <p class="mb-1"><a href="servicios.html">SERVICIOS</a></p>
+                <p class="mb-1"><a href="sobremi.html">SOBRE MÍ</a></p>
+                <p class="mb-1"><a href="blog.html">BLOG</a></p>
+                <p class="mb-0"><a href="como_trabajamos.html">CÓMO TRABAJAMOS</a></p>
+                <p class="mb-1"><a href="contacto.html">CONTACTO</a></p>
+            </div>
+
+
+
+            <div class="text-center mt-4">
+                <p class=" text-center" style="color: var(--v);">© 2025 SDSTUDIO Sofía Delmonte</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

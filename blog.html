@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulario de contacto para el portfolio de Sofía Delmonte.">
-    <title>SDSTUDIO-Sofía Delmonte</title>
+    <meta name="description" content="Lee mis artículos y descubre consejos sobre diseño web, estrategias digitales y el proceso de crear una presencia online auténtica.">
+    <title>Blog SDSTUDIO-Sofía Delmonte</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
@@ -62,16 +62,22 @@
         }
 
         .navbar-bottom {
-            background-color: var(--celeste-claro);
+            background-color: var(--violeta);
         }
 
-          .navbar a {
+        .navbar a {
             text-decoration: none;
             transition: transform 0.3s ease-in-out;
             color: var(--v)
         }
 
-        .top-section {
+        a {
+            text-decoration: none;
+            color: var(--v)
+        }
+
+
+        .top-section, .bottom-section {
             width: 33.333%;
             /* Cada sección ocupa un tercio del ancho */
             text-align: center;
@@ -84,15 +90,9 @@
             justify-content: center;
         }
 
-        .bottom-section {
-            width: 50%;
-            /* Cada sección ocupa la mitad del ancho */
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-        }
+      
 
-        a:hover {
+        .navbar a:hover {
             /* Agranda el texto a 1.2 veces su tamaño original */
             transform: scale(1.5);
         }
@@ -134,12 +134,12 @@
                 <div class="top-section"><a href="trabajos.html">TRABAJOS</a></div>
                 <div class="top-section"><a href="servicios.html">SERVICIOS</a></div>
             </div>
-            <div class="navbar-top">
-                <div class="top-section"><a href="sobremi.html">SOBRE MÍ</a></div>
-                <div class="top-section active"><a href="blog.html">BLOG</a></div>
+            <div class="navbar-bottom">
+                <div class="bottom-section"><a href="sobremi.html">SOBRE MÍ</a></div>
+                <div class="bottom-section active"><a href="blog.html">BLOG</a></div>
 
 
-                <div class="top-section"><a href="contacto.html">CONTACTO</a></div>
+                <div class="bottom-section"><a href="contacto.html">CONTACTO</a></div>
             </div>
         </nav>
     </header>
@@ -150,9 +150,9 @@
                 BLOG
             </h1>
         </div>
-        <h2 class="text-light text-center" style="background-color: var(--violeta) ">
+        <h2 class="text-center" style="background-color: var(--violeta); color: var(--v); ">
             TODO LO QUE TENGO QUE SABER
-        </h2>
+        </h2><br>
 
         <!--  JUMBOTRON CARROUSEL JUMBOTRON CARROUSEL JUMBOTRON CARROUSEL-->
         <!-- Carousel -->
@@ -197,6 +197,99 @@
         </div><br>
         <!--FIN JUMBOTRON CARROUSEL FIN JUMBOTRON CARROUSEL FIN JUMBOTRON CARROUSEL-->
 
+        <!--NAV DROPDOWN SEARCH
+        <div class="container mb-4">
+            <div class="row gy-3 align-items-md-center">
+
+                <div class="col-12 col-md-6">
+                    <div class="dropdown">
+                        <button class="btn btn-violeta dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorías
+                        </button>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item " href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <nav>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                            <button class="btn btn-violeta" type="submit">Buscar</button>
+                        </form>
+                    </nav>
+                </div>
+
+            </div>
+        </div>-->
+        <!--POST-->
+        <div class="container">
+            <div class="row mb-3">
+                <!--PATRONES ENGAÑOSOS-->
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <a href="blog/patrones_engañosos.html">
+                            <img src="img/SDWeb contenido web//5.png" class="img-fluid w-75 mx-auto mb-1 d-block"
+                                alt="Animación">
+                        </a>
+                        <div class="card-body">
+                            <a href="blog/patrones_engañosos.html">
+                                <h4 class="text-center">Patrones engañosos o patrones oscuros en internet.</h4>
+                            </a>
+
+                        </div>
+                        <div class="card-footer">
+                            <p>Publicado el <time datetime="2025-07-02T15:06">2 de julio de 2025 a las 15:06 AM</time>.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--ESTRUCTURA DE UNA WEB-->
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <a href="blog/estructura_de_una_web.html">
+                            <img src="img/estructura.png" class="img-fluid w-75 mx-auto mb-1 d-block" alt="Animación">
+                        </a>
+                        <div class="card-body">
+                            <a href="blog/estructura_de_una_web.html">
+                                <h4 class="text-center">Estructura de una web</h4>
+                            </a>
+
+                        </div>
+                        <div class="card-footer">
+                            <p>Publicado el <time datetime="2025-08-01T10:00">1 de agosto de 2025 a las 10:00 AM</time>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
+                         <a href="blog/patrones_engañosos.html">
+                            <img src="img/SDWeb contenido web//5.png"
+                                class="img-fluid w-75 mx-auto mb-1 d-block"
+                                alt="Animación">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="text-center">Patrones engañosos o patrones oscuros en internet.</h4>
+                           
+                        </div>
+                        <div class="card-footer">
+                            <p>Publicado el <time datetime="2025-08-01T10:00">1 de agosto de 2025 a las 10:00 AM</time>.
+                            </p>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
     </main>
 
     <footer class="p-4 mt-5 footer-custom">
