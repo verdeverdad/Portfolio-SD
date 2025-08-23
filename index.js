@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('DOMContentLoaded', () => {
             const alerta = document.getElementById('alerta-fugaz');
             const contenido = document.getElementById('contenido-principal');
-            const duracionAlerta = 2000; // La alerta dura 4 segundos
+            const duracionAlerta = 2500; // La alerta dura 4 segundos
 
             const opciones = {
                 root: null,
