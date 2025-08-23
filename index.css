@@ -363,12 +363,13 @@ thead {
 /*======= color violeta ======*/
 /*===============================*/
 .card-violeta {
-    background-color: #4335757a;
+  background-color: #4335757a;
 
 }
+
 .btn-violeta {
   color: var(--v);
-    background-color: var(--violeta);
+  background-color: var(--violeta);
   border-color: var(--v);
 }
 
@@ -454,4 +455,144 @@ thead {
   100% {
     transform: translateX(-300%);
   }
+}
+
+.alerta-cerrar-btn {
+  position: absolute;
+  top: 70px;
+  right: 10%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--blanco);
+  line-height: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.seccion-enganosa1 {
+  background-color: red;
+  color: var(--blanco);
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.texto-gancho {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--blanco);
+}
+
+.texto-gancho2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--azul);
+}
+
+/* Estilos para el botón del "gancho" */
+.btn-gancho {
+  background-color: var(--negro);
+  color: var(--blanco);
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-gancho:hover {
+  transform: scale(1.05);
+  background-color: var(--blanco);
+  color: var(--negro);
+
+}
+
+/* Estilos para el texto de la filosofía */
+.texto-filosofia {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--violeta);
+}
+
+/* Estilos para el párrafo de la filosofía */
+.parrafo-filosofia {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos para el botón de la filosofía */
+.btn-filosofia {
+  background-color: var(--azul);
+  color: var(--v);
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-filosofia:hover {
+  transform: scale(1.05);
+  background-color: var(--v);
+  color: var(--azul);
+  border: 2px solid var(--azul);
+}
+
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .texto-gancho {
+    font-size: 1.5rem;
+  }
+
+  .btn-gancho,
+  .btn-filosofia {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+
+.alerta-cerrar-btn:hover {
+  transform: scale(1.2);
+}
+
+#alerta-fugaz {
+  opacity: 0;
+  visibility: hidden;
+  /* Esto la hace invisible, pero sigue ocupando espacio */
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--violeta);
+  padding: 10px 25px;
+  border: 10px;
+
+  border-color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* La clase que añadimos para mostrarla */
+#alerta-fugaz.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* El contenido principal está oculto por defecto */
+#contenido-principal {
+  display: none;
 }
