@@ -23,7 +23,7 @@ Mi trabajo se enfoca en la intersección de **React, TypeScript** y los principi
 
 | Área | Tecnologías Clave |
 | :--- | :--- |
-| **Front-End** | React, **TypeScript,** JavaScript, **Redux** |
+| **Front-End** | React, React Native **TypeScript,** JavaScript, **Redux** |
 | **Back-End/DB** | **Node.js, Express,** MongoDB, **Firebase** |
 | **Estilo/Diseño** | HTML5, CSS3, SASS/LESS, Figma |
 | **Control/APIs** | Git, API Rest |
