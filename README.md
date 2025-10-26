@@ -56,4 +56,4 @@ Este proyecto ejemplifica mi capacidad para vincular el diseño UX con el rigor 
 
 ---
 
-**[Enlace a tu Perfil de LinkedIn]** | **[Enlace a tu Portafolio Principal]**
+**[(https://www.linkedin.com/in/sdstudiosolucionesdigitales/)]** | **[Https://www.sdstudio.click]**
