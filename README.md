@@ -18,7 +18,6 @@ Mi trabajo se enfoca en la intersección de **React, TypeScript** y los principi
 
 ---
 
-
 ### 🛠️ Stack y Herramientas de Rigor
 
 | Área | Tecnologías Clave |
