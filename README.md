@@ -1,6 +1,6 @@
 # 💻 README.md: Sofía Delmonte - Desarrolladora Full Stack & Diseñadora UX Inclusiva
 
-Soy una Desarrolladora **Full Stack (MERN/TS)** con un profundo enfoque en el **Rigor Arquitectónico** y la **Experiencia de Usuario Inclusiva (WCAG)**. Mi misión es construir soluciones de software robustas, predecibles y éticas que generen valor real para el negocio y la dignidad para el usuario.
+Soy una Desarrolladora **Full Stack (MERN/TS)** con un profundo enfoque en el **Rigor Arquitectónico** y la **Experiencia de Usuario Inclusiva (WCAG)**. Mi misión es construir soluciones de software robustas, predecibles y éticas que generen valor real para el negocio y la experiencia del usuario.
 
 Mi trabajo se enfoca en la intersección de **React, TypeScript** y los principios de **Product Sense**, garantizando la sostenibilidad a largo plazo.
 
