@@ -392,17 +392,18 @@ thead {
   text-align: center;
   width: 60%;
   box-shadow: -5px 1px 3px 2px var(--v);
-
+  white-space: normal; /* permite que el texto haga salto de línea */
+  word-wrap: break-word;
 }
 
 /*para que no se rompa el boton en pantallas chicas*/
-@media (max-width: 360px) {
+@media (max-width: 576px) {
 
   .btn1,
   .btn-club {
-    max-width: 250px;
+    max-width: 320px;
     /* o el valor que necesites */
-    font-size: 14px;
+    font-size: 20px;
     /* opcional, para evitar que el texto se desborde */
     padding: 8px 16px;
     /* opcional, para mantener proporciones */
