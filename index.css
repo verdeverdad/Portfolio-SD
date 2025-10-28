@@ -385,7 +385,7 @@ thead {
   font-weight: bold;
   font-size: 40px;
   color: var(--blanco);
-  background: var(--negro);
+  background: var(--azul);
   border-radius: 50px;
   border: 2px solid var(--azul);
   transition: all 0.9s;
@@ -393,6 +393,20 @@ thead {
   width: 60%;
   box-shadow: -5px 1px 3px 2px var(--v);
 
+}
+
+/*para que no se rompa el boton en pantallas chicas*/
+@media (max-width: 360px) {
+
+  .btn1,
+  .btn-club {
+    max-width: 250px;
+    /* o el valor que necesites */
+    font-size: 14px;
+    /* opcional, para evitar que el texto se desborde */
+    padding: 8px 16px;
+    /* opcional, para mantener proporciones */
+  }
 }
 
 /* Start: Video Responsive */
