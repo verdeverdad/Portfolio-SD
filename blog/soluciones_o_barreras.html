@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cuando la tecnología es la única puerta de entrada a servicios básicos, el diseño deja de ser un valor añadido para ser una responsabilidad.">
+    <title>La asimetría del poder en UX: ¿Diseñamos soluciones o barreras?
+    </title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="canonical" href="https://www.sdstudio.click/blog/soluciones_o_barreras.html">
+
+    <meta property="og:title" content="La asimetría del poder en UX: ¿Diseñamos soluciones o barreras?
+">
+    <meta property="og:description"
+        content="Cuando la tecnología es la única puerta de entrada a servicios básicos, el diseño deja de ser un valor añadido para ser una responsabilidad.">
+    <meta property="og:url" content="https://www.sdstudio.click/blog/soluciones_o_barreras.html">
+    <meta property="og:image" content="https://www.sdstudio.click/img/soluciones_o_barreras.png">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="La asimetría del poder en UX: ¿Diseñamos soluciones o barreras?">
+    <meta name="twitter:description"
+        content="El software a medida es una solución personalizada que se adapta a las necesidades específicas de cada negocio.">
+    <meta name="twitter:image" content="https://www.sdstudio.click/img/soluciones_o_barreras.png">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        body {
+            background-color: var(--violeta);
+            margin: 0;
+            padding-top: 90px;
+            /* Asegúrate de que este valor sea igual a la altura de tu navbar */
+            font-family: sans-serif;
+        }
+
+        .page-title {
+            background-color: var(--v);
+            color: var(--violeta);
+            /* Se quita el margen superior ya que el padding del body lo maneja */
+            margin-top: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--violeta);
+            color: var(--v);
+            z-index: 900;
+            /* La altura de la navbar es de aproximadamente 100px con los paddings */
+        }
+
+        .navbar-top,
+        .navbar-bottom {
+            display: flex;
+            width: 100%;
+            /* Ambas líneas ocupan todo el ancho del contenedor */
+            padding: 5px 0;
+            /* padding vertical, 0 horizontal */
+        }
+
+        .navbar-top {
+            display: flex;
+            width: 100%;
+            padding: 5px 0;
+
+            /* PROPIEDAD CLAVE: Alinea verticalmente todos los hijos al centro */
+            align-items: center;
+            background-color: var(--violeta);
+        }
+
+        .navbar-bottom {
+            background-color: var(--violeta);
+        }
+
+        .navbar a,
+        a {
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+            color: var(--v)
+        }
+
+        .top-section,
+        .bottom-section {
+            width: 33.333%;
+            /* Cada sección ocupa un tercio del ancho */
+            text-align: center;
+            cursor: pointer;
+            /* PROPIEDAD CLAVE: Hace que la sección sea un contenedor flex... */
+            display: flex;
+
+            /* ...y centra su contenido tanto vertical como horizontalmente */
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        a:hover {
+            /* Agranda el texto a 1.2 veces su tamaño original */
+            transform: scale(1.5);
+        }
+
+        .active {
+            font-weight: bold;
+            transform: scale(1.2);
+
+        }
+
+        .footer-custom {
+            background-color: var(--violeta);
+        }
+
+        .footer-custom a,
+        .footer-custom p {
+            color: var(--v);
+            text-decoration: none;
+        }
+
+        .footer-custom a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            max-width: 60%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+    <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-top">
+                <div class="top-section">
+                    <a href="../index.html">
+                        <img src="../img/SDLOGONAV.png" alt="Logo SDSTUDIO Sofía Delmonte" class="img-fluid"
+                            style="max-width: 100px;">
+                    </a>
+                </div>
+                <div class="top-section"><a href="../trabajos.html">TRABAJOS</a></div>
+                <div class="top-section"><a href="../servicios.html">SERVICIOS</a></div>
+            </div>
+            <div class="navbar-bottom">
+                <div class="bottom-section"><a href="../sobremi.html">SOBRE MÍ</a></div>
+                <div class="bottom-section active"><a href="../blog.html">BLOG</a></div>
+                <div class="bottom-section"><a href="../contacto.html">CONTACTO</a></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center" style="background-color: var(--v); color: var(--violeta);">
+            La asimetría del poder en UX: ¿Diseñamos soluciones o barreras?
+        </h1>
+
+        <span style="font-size: 24px; color: var(--v);">&#x2190;</span>
+        <a href="../blog.html" style="font-size: 18px; color: var(--v); text-decoration: underline;">Volver al Blog</a>
+
+        <div class="container">
+            <div class="card card-violeta">
+                <div class="p-5" style="color:#f3f3ff">
+                    <img class="img-fluid w-75 mx-auto mb-1 d-block" src="../img/soluciones_o_barreras.png"
+                        alt="Ilustración de una figura aislada que representa la exclusión digital y la asimetría de poder"
+                        style="max-width:50%;" />
+
+                    <h4 style="color:#f3f3ff">
+                        El Diseño como Refugio: La Ética de los Servicios Esenciales y el Usuario Cautivo
+                    </h4>
+
+                    <p>
+                        Vivimos en una paradoja tecnológica: mientras la industria celebra el avance exponencial de la
+                        <strong>IA y la robótica,</strong> una brecha invisible se ensancha bajo nuestros pies. El
+                        progreso tecnológico
+                        no está siendo acompañado por la realidad social, creando una <strong>dependencia tecnológica
+                            forzada</strong>
+                        que no todos pueden costear ni comprender. No es solo que la innovación avance rápido; es que lo
+                        hace ignorando a quienes poseen dispositivos viejos, conexiones precarias o un analfabetismo
+                        digital que los deja fuera de juego. Cuando la tecnología se convierte en la única puerta de
+                        entrada a la vida moderna, el diseño deja de ser un valor añadido para convertirse en una
+                        responsabilidad del sistema.
+                    </p>
+
+                    <br>
+                    <hr><br>
+
+                    <p>Este escenario nos obliga a redefinir qué entendemos por <strong>accesibilidad</strong>. Ya no
+                        basta con hablar de
+                        limitaciones visuales o motrices; hoy la urgencia está en la <strong>accesibilidad cognitiva y
+                            contextual.</strong>
+                        Necesitamos diseñar para el usuario no local, para quien no domina el idioma del sistema y,
+                        sobre todo, para personas bajo niveles críticos de estrés.
+                        Cuando un entorno digital es hostil o confuso, genera un <strong>aumento exponencial de
+                            estrés</strong> y una carga emocional innecesaria
+                        que deriva en decisiones impulsivas y una pérdida total de confianza en las instituciones. Un
+                        error de interfaz en este contexto no es un "bug", es una barrera que genera un impacto real y
+                        doloroso en la vida de las personas.
+                    </p>
+
+                    <br>
+                    <hr><br>
+
+                    <p>En diseño y producto, esto se estudia bajo conceptos crudos: <strong>Power Asymmetry (asimetría
+                            de poder)
+                            y Captive Users (usuarios cautivos).</strong> En los servicios esenciales como la salud, la
+                        banca o la
+                        identidad, el usuario no elige la plataforma, <strong>no puede abandonar el proceso</strong> y,
+                        trágicamente, no
+                        tiene un plan B. A diferencia de una app de ocio, donde el mal diseño es castigado por el
+                        mercado con el abandono,
+                        en los servicios públicos el mercado no castiga la mediocridad. El usuario está atrapado.
+                        Aquí es donde el <strong>Essential Services UX</strong> se vuelve crítico, porque estamos
+                        diseñando para situaciones donde no hay alternativa humana cuando el sistema falla.
+                    </p>
+
+                    <br>
+                    <hr><br>
+
+                    <p>La ausencia de contingencias tiene consecuencias físicas. Recuerdo estar en una terminal en un
+                        pueblo chico de
+                        Argentina intentando sacar un pasaje para el último bus; la boletería cerrada con un cartel
+                        "solo se pueden sacar pasajes on-line"
+                        y el sistema digital era un laberinto. Mientras yo
+                        intentaba resolverlo (sin éxito), miraba a mi alrededor y pensaba en quienes tienen menos
+                        recursos económicos y cognitivos: para ellos, el fallo del sistema es una sentencia de
+                        desamparo.
+                        Ese <strong>riesgo real de quedarte tirado</strong> es la
+                        cara más amarga del
+                        <strong>Design without Accountability (diseño sin rendición de cuentas).</strong>
+                        <br><br>
+                        No es una exclusión violenta. Es peor: es una <strong>exclusión por omisión</strong>. Cuando el
+                        efectivo desaparece, el canal físico se cierra y la conectividad se da por sentada, el usuario
+                        queda en una indefensión absoluta. La tecnología debería ser una red de seguridad, no un abismo
+                        que aísla.
+                        <br><br>
+                        👉 El sistema deja de servir a una parte de la población, aunque diga que “avanzó”. Y esa gente
+                        probablemente no tenga smartphone moderno, quizá no tenga datos siempre, quizá no
+                        confíe en apps, quizá no sepa leer interfaces complejas, quizá maneje efectivo porque es lo que
+                        hay.
+                        Y no es ignorancia. Es realidad material.
+                        <strong>Ellos no están en la mesa cuando se toman las decisiones.</strong>
+                        Nadie los va a escuchar: no van a escribir en Twitter ni van a quejarse en LinkedIn. Simplemente
+                        van a quedar afuera. Y cuando eso pasa, el sistema suele decir: “y bueno… hay que adaptarse”
+                        <br><br>
+                        <strong>Como si adaptarse fuera gratis.</strong>
+                        <br><br>
+                        <strong>Y ojo con esto (es importante):</strong> No estoy romantizando la pobreza, eNo estoy
+                        diciendo “todo tiene que ser como antes”. Estoy diciendo algo mucho más serio: la
+                        transición tiene que ser gradual, inclusiva y con alternativas reales. Eso es diseño
+                        responsable. Porque cuando nadie es ese usuario, nadie conoce a ese usuario, nadie piensa en ese
+                        usuario, ese usuario no está representado y simplemente desaparece
+                        del diseño.
+                    </p>
+                    <br>
+
+                    <hr><br>
+
+                    <p>Finalmente, debemos entender que la automatización de lo esencial requiere un compromiso ético
+
+                        innegociable. Si vamos a eliminar la mediación humana en el transporte o la salud, el sistema
+
+                        debe asumir la <strong>responsabilidad total</strong> de esa interacción. No podemos permitir
+
+                        que la eficiencia
+
+                        de unos pocos se construya sobre la exclusión de los más vulnerables. Un diseño verdaderamente
+
+                        inclusivo es aquel que contempla la fragilidad, que ofrece salidas cuando la conexión falla y
+
+                        que entiende que, al otro lado de la pantalla, hay una persona cuya estabilidad depende de que
+
+                        nosotros hayamos hecho bien nuestro trabajo.</p>
+                    <br>
+                    <hr><br>
+
+                    <h5>La trampa actual de la “tecnología del futuro”</h5>
+                    <p>IA, gafas, automatización, robótica… todo eso suele asumir:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px;">
+                        <li>Conectividad constante</li>
+                        <li>Dispositivos caros</li>
+                        <li>Alfabetización digital alta</li>
+                        <li>Idiomas dominantes</li>
+                        <li>Tiempo y calma para aprender</li>
+                    </ul>
+                    <p><strong>Y eso describe a una porción muy chica del mundo.</strong></p>
+
+                    <p><strong>Mientras tanto:</strong></p>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>👉 Hay gente con datos limitados</li>
+                        <li>👉 Gente con celulares viejos</li>
+                        <li>👉 Gente que comparte dispositivo</li>
+                        <li>👉 Gente no digitalizada</li>
+                    </ul>
+
+                    <p style="font-size: 1.1em; margin-top: 20px;">
+                        ---> La tecnología avanza más rápido que la inclusión<br>
+                        ---> La innovación no está llegando a todos al mismo ritmo <br>
+                        ---> Muchas soluciones se diseñan para una minoría hiperconectada
+                    </p>
+
+                    <p><strong>Accesibilidad no es solo discapacidad. Es también:</strong></p>
+                    <ul style="list-style-type: square; margin-left: 20px;">
+                        <li>Acceso económico</li>
+                        <li>Acceso tecnológico</li>
+                        <li>Acceso cognitivo</li>
+                        <li>Acceso cultural</li>
+                        <li>Acceso contextual</li>
+                    </ul>
+
+                    <p style="font-style: italic; margin-top: 30px;">
+                        Y sí:<br>
+                        el mundo va rápido,<br>
+                        pero no todos están en el mismo punto de partida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="p-4 mt-5 footer-custom">
+        <div class="row align-items-center">
+
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-1"><a href="https://www.linkedin.com/in/sofia-delmonte-6108a310a/" target="_blank"
+                        rel="noopener noreferrer">LINKEDIN</a></p>
+                <p class="mb-1"><a href="https://github.com/verdeverdad" target="_blank"
+                        rel="noopener noreferrer">GITHUB</a></p>
+                <p class="mb-0"><a href="https://wa.me/59899675402" target="_blank"
+                        rel="noopener noreferrer">WHATSAPP</a></p>
+            </div>
+
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <a href="index.html">
+                    <img src="../img/Logonav.png" alt="Logo SDSTUDIOSofía Delmonte" class="img-fluid footer-logo">
+                </a>
+            </div>
+
+            <div class="col-md-4 text-center text-md-end">
+                <p class="mb-1"><a href="index.html">INICIO</a></p>
+                <p class="mb-1"><a href="trabajos.html">TRABAJOS</a></p>
+                <p class="mb-1"><a href="servicios.html">SERVICIOS</a></p>
+                <p class="mb-1"><a href="sobremi.html">SOBRE MÍ</a></p>
+                <p class="mb-1"><a href="blog.html">BLOG</a></p>
+                <p class="mb-0"><a href="como_trabajamos.html">CÓMO TRABAJAMOS</a></p>
+                <p class="mb-1"><a href="contacto.html">CONTACTO</a></p>
+            </div>
+
+
+
+            <div class="text-center mt-4">
+                <p class=" text-center" style="color: var(--v);">© 2025 SDSTUDIO Sofía Delmonte</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
