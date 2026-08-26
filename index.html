@@ -59,11 +59,11 @@
         }
 
         .footer-custom {
-            background-color: var(--blanco);
+            background-color: var(--azul);
         }
 
         .footer-custom a {
-            color: var(--azul);
+            color: var(--verde-claro);
             text-decoration: none;
         }
 
@@ -82,16 +82,14 @@
             font-family: sans-serif;
         }
 
-        .navbar {
+         .navbar {
             width: 100%;
             position: fixed;
             top: 0;
             left: 0;
-            background-color: var(--blanco);
-            color: var(--azul);
+            background-color: var(--azul);
+            color: var(--v);
             z-index: 900;
-            transition: transform 0.3s ease-in-out;
-
             /* La altura de la navbar es de aproximadamente 100px con los paddings */
         }
 
@@ -102,8 +100,6 @@
             /* Ambas líneas ocupan todo el ancho del contenedor */
             padding: 5px 0;
             /* padding vertical, 0 horizontal */
-            transition: transform 0.3s ease-in-out;
-
         }
 
         .navbar-top {
@@ -111,18 +107,21 @@
             width: 100%;
             padding: 5px 0;
 
-
-            background-color: var(--blanco);
+            /* PROPIEDAD CLAVE: Alinea verticalmente todos los hijos al centro */
+            align-items: center;
+            background-color: var(--azul);
         }
 
         .navbar-bottom {
-            background-color: var(--blanco);
-
+            background-color: var(--gris);
         }
 
-        a {
-            text-decoration: none;
+        .navbar a {
             transition: transform 0.3s ease-in-out;
+
+            text-decoration: none;
+            color: var(--v);
+            /* Aprovechamos para definir también el color aquí */
         }
 
         .top-section {
@@ -130,9 +129,12 @@
             /* Cada sección ocupa un tercio del ancho */
             text-align: center;
             cursor: pointer;
-            transition: transform 0.3s ease-in-out;
+            /* PROPIEDAD CLAVE: Hace que la sección sea un contenedor flex... */
+            display: flex;
 
-
+            /* ...y centra su contenido tanto vertical como horizontalmente */
+            align-items: center;
+            justify-content: center;
         }
 
         .bottom-section {
@@ -141,61 +143,62 @@
             text-align: center;
             text-decoration: none;
             cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-
         }
 
-        a:hover,
-        .top-section:hover,
-        .bottom-section:hover {
+        .navbar a:hover {
             /* Agranda el texto a 1.2 veces su tamaño original */
-            transform: scale(1.3);
-            color: var(--violeta);
-        }
-
-        main {
-            padding: 5px;
+            transform: scale(1.5);
         }
 
         .active {
             font-weight: bold;
-            transform: scale(1.3);
+            transform: scale(1.1);
 
         }
-    </style>
 
+        main {
+            padding: 10px;
+        }
+</style>
 </head>
 
-<body style="background-color: var(--blanco);">
+<body style="background-color: var(--azul);">
     <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
     <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
     <!--navbar--v--navbar--navbar--navbar--navbar--navbar--navbar--navbar-->
-    <header>
+     <header>
         <nav class="navbar">
             <div class="navbar-top">
-                <div class="top-section"><a href="sobremi.html">SOBRE MÍ</a></div>
-                <div class="top-section"><a href="trabajos.html">TRABAJOS</a></div>
+                <div class="top-section"> <a href="index.html">
+                        <img src="img/SDLOGONAV.png" alt="Logo Sofía Delmonte" class="img-fluid"
+                            style="max-width: 100px;"></a></div>
+                <div class="top-section active"><a href="trabajos.html">TRABAJOS</a></div>
                 <div class="top-section"><a href="servicios.html">SERVICIOS</a></div>
             </div>
-            <div class="navbar-bottom">
-
-                <div class="bottom-section"><a href="blog.html">BLOG</a></div>
-
-
-                <div class="bottom-section"><a href="contacto.html">CONTACTO</a></div>
+            <div class="navbar-top">
+                <div class="top-section"><a href="sobremi.html">SOBRE MÍ</a></div>
+                <div class="top-section "><a href="blog.html">BLOG</a></div>
+                <div class="top-section"><a href="contacto.html">CONTACTO</a></div>
             </div>
         </nav>
     </header>
 
+    <!--Banner-->
     <div class="img-container">
         <a href="index.html">
             <img src="img/logo.nav.gif" class="align-items-center" width="50%"
                 alt="Logo de SDSTUDIO Diseño y programación/Soluciones Digitales"></a>
 
-        <img src="img/sdindex.png" width="100%" class="mt-0"
-            alt="Ofrecemos soluciones en desarrollo y diseño de páginas web">
+        <!-- <img src="img/sdindex.png" width="100%" class="mt-0"
+            alt="Ofrecemos soluciones en desarrollo y diseño de páginas web"> -->
     </div>
 
+    <div class="mb-3 p-4" style="background-color: var(--azul);">
+        <h2 style="color: var(--verde-claro); text-align: center; font-weight: 400; line-height: 50px;"
+            class="font-monospace fs-1 p-3">TODO LO QUE TU PRESENCIA DIGITAL NECESITA: <br>· Diseño · Desarrollo web y
+            app <br>· UX y Accesibilidad </h2>
+    </div>
+    <!--alerta-->
     <div id="alerta-fugaz">
         <div class="container seccion-enganosa1">
             <div class="row">
@@ -215,8 +218,7 @@
                 La verdad es que no hay atajos para el éxito.
             </p><br>
             <div class="card-body text-center">
-                <p class="card-title font-monospace fs-4">Lo siento, pero el crecimiento real no funciona así.
-                </p><br>
+
                 <p class="card-text fs-5">
                     Tu negocio no se construyó con click.<br> Y tu presencia digital tampoco debería.
                 </p><br>
@@ -225,82 +227,34 @@
 
         <div class="container card card-negro seccion-enganosa" style="background-color: var(--azul);">
             <p class="card-header text-center  font-monospace fs-2">
-                En el mundo digital,
+                En un mundo de soluciones instantáneas,
             </p>
             <div class="card-body text-center">
-                <p class="card-title font-monospace fs-3">¡las soluciones instantáneas prometen mucho y entregan poco!
+                <p class="card-title font-monospace fs-3">en SDSTUDIO construimos con propósito y dedicación.
                 </p><br>
-                <p class="card-text fs-5">Nos hemos acostumbrado a buscar el camino fácil,<br> <strong> pero el verdadero
-                        valor
-                        no se
-                        encuentra en la gratificación inmediata.</strong>
+                <p class="card-text fs-5"><strong> Creamos tu presencia digital auténtica, pensando en el futuro,<br>
+                        para que crezca con vos y se adapte a cada nueva etapa</strong>
                 </p><br>
             </div>
         </div><br>
 
         <div class="container card card-verde seccion-enganosa">
-            <p class="card-header text-center  font-monospace fs-2">En SDSTUDIO creemos en la construcción
-                sólida y estratégica. </p> <br>
-            <div class="card-body text-center">
-                <p class="card-title font-monospace fs-1">El éxito digital no es un atajo,</p><br>
-                <p class="card-text fs-5">sino un camino que se
-                    recorre <br>
-                    con propósito y dedicación.</p><br>
-            </div>
-        </div><br>
-
-        <div class="container card card-negro seccion-enganosa" style="background-color: var(--azul);">
-            <p class="card-header text-center  font-monospace fs-2">
-                En un mundo de soluciones rápidas,
-            </p>
-            <div class="card-body text-center">
-                <p class="card-title font-monospace fs-1">¡valoramos el esfuerzo, la visión y la dedicación que has
-                    invertido en tu negocio!
-                </p><br>
-                <p class="card-text fs-5">Creamos tu presencia digital auténtica<br> pensando en el futuro<br>
-                    para que crezca contigo y se adapte a cada nueva etapa.
-                </p><br>
-            </div>
-        </div><br>
-
-        <div class="container card card-verde seccion-enganosa">
-            <p class="card-header text-center  font-monospace fs-2">Si estás list@
+            <p class="card-header text-center  font-monospace fs-2">¿Estás list@ para dejar una huella digital que
+                refleje la calidad de tu
+                trabajo?
             </p> <br>
             <div class="card-body text-center">
-                <p class="card-title font-monospace fs-1">para dejar una huella digital que refleje la calidad de tu
-                    trabajo,
+                <p class="card-title font-monospace fs-1">Llegaste al destino indicado
                 </p><br>
-                <p class="card-text fs-3">Llegaste al destino indicado
-                </p><br>
+
+            </div>
+            <div class="d-flex justify-content-center gap-3 mt-2 mb-3">
+                <a href="trabajos.html" class="btn btn-filosofia2">Ver trabajos</a>
+                <a href="contacto.html" class="btn btn-filosofia">Contacto</a>
             </div>
         </div><br>
 
-        <div class="container card card-negro" style="background-color: var(--azul);">
-            <p class="card-header text-center  font-monospace fs-2">
-                ¿Qué tengo que hacer?
-            </p>
-            <div class="card-body text-center">
-                <p class="card-title font-monospace fs-1">¡Te guiaré para que tomes las mejores
-                    decisiones!</p><br>
-                <p class="card-text fs-4">Y conozcas este maravilloso mundo virtual</p><br>
 
-            </div>
-        </div><br>
-
-        <div id="" class="container card card-verde seccion-enganosa" >
-            <h1 class="card-header text-center font-monospace fs-2">
-                ¿Cómo comenzar?
-            </h1>
-            <div class="card-body text-center">
-                <p class="card-title font-monospace fs-1">Para concretar una entrevista y/o solicitar un
-                    presupuesto
-                    completa los datos en
-                    la sección:</p>
-                <br>
-
-                <a href="contacto.html" class="btn btn-filosofia"><strong>Contacto</strong></a><br>
-            </div>
-        </div><br>
 
         <footer class="p-4 mt-5 footer-custom">
             <div class="row align-items-center">
