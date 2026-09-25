@@ -503,6 +503,7 @@ thead {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
   margin-bottom: 50px;
+ 
 }
 
 .texto-gancho {
@@ -565,6 +566,10 @@ thead {
   cursor: pointer;
   border-radius: 5px;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px; /* mismo ancho mínimo para los dos */
 }
 
 .btn-filosofia:hover {
@@ -573,6 +578,7 @@ thead {
   color: var(--azul);
   border: 2px solid var(--azul);
 }
+
 
 .btn-filosofia2 {
   background-color: var(--verde-claro);
