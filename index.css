@@ -71,12 +71,6 @@ thead {
   background-color: #f5f5ef;
 }
 
-
-
-/*address {
-      color: rgb(116, 101, 253);
-    }*/
-
 .card {
   flex: 1 200px;
   margin-top: 30px;
@@ -713,4 +707,225 @@ thead {
 .timeline-card {
   border: none;
   border-left: 4px solid var(--timeline-dot-color); /* Un detalle visual lindo */
+}
+
+
+/* ================================
+   CARDS DE PROYECTOS
+================================ */
+
+.project-card {
+    height: 100%;
+    background-color: #6b7a922a;
+    color: var(--blanco);
+  border: 2px solid #d5dadf;
+
+    border-radius: 8px;
+    padding: 18px;
+    
+          animation: mymove 16s infinite;
+
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--v);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Zona reservada para el logo */
+.project-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/* El logo se adapta sin deformarse */
+.project-image img {
+   max-width: 70%;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-image img.vidafertil {
+    max-width: 50%;
+}
+
+
+/* Nombre */
+.project-title {
+    margin: 10px 0 8px;
+    font-size: 1.45rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* Tipo de trabajo */
+.project-type {
+    margin-bottom: 10px;
+    color: var(--v);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* Descripción breve */
+.project-description {
+    min-height: 48px;
+    margin-bottom: 18px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* Enlaces */
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-links a {
+    color: var(--blanco);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+    color: var(--v);
+    transform: none;
+}
+
+.project-main-link {
+    font-weight: 700;
+}
+
+.project-external-link {
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   GALERÍA DE LOGOS
+   ======================================== */
+
+.logo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.logo-card {
+    background-color: #6b7a922a;
+    color: var(--v);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-card:hover {
+    transform: translateY(-5px);
+}
+
+.logo-card-image {
+    height: 260px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.logo-card-image img {
+    display: block;
+    max-width: 100%;
+    max-height: 210px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-card-content {
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.logo-card-content h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.logo-card-content p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Variantes de un mismo proyecto */
+
+.logo-variants {
+    gap: 1rem;
+}
+
+.logo-variants img {
+    max-width: 28%;
+    max-height: 180px;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+    .logo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .logo-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .logo-card-image {
+        height: 240px;
+        
+    }
+
+    .logo-card-image img {
+        max-height: 190px;
+    }
+
+    .logo-variants {
+        height: auto;
+        min-height: 220px;
+    }
+
+    .logo-variants img {
+        max-width: 28%;
+        max-height: 150px;
+    }
+
+    .section-heading{
+      margin-top: 50px; 
+      margin-bottom: 50px;
+    }
+
+    .section-heading h2{
+      color: var(--azul); 
+      background-color: var(--v);
+      text-align:center;
+    }
+
 }
