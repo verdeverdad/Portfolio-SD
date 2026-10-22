@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portfolio de Sofía Delmonte">
-    <title>SDSTUDIO - Sofía Delmonte</title>
+    <meta name="description"
+        content="Servicios y precios base de SDSTUDIO: desarrollo web, landing page, ecommerce, auditoría de accesibilidad y UX, asesoría digital, diseño de logo y packs de diseño.">
+    <title>Servicios - SDSTUDIO Sofía Delmonte</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
@@ -18,7 +19,6 @@
         body {
             background-color: var(--negro);
             /* El padding-top es crucial para que el contenido no quede oculto bajo el navbar fijo */
-            /* Ajustado a la altura aproximada de tu navbar de dos filas */
             padding-top: 90px;
             margin: 0;
         }
@@ -26,10 +26,8 @@
         .page-title {
             background-color: var(--negro);
             color: var(--v);
-            /* Se quita el margen superior ya que el padding del body lo maneja */
             margin-top: 0;
         }
-
 
         .navbar {
             width: 100%;
@@ -39,24 +37,19 @@
             background-color: var(--negro);
             color: var(--v);
             z-index: 900;
-            /* La altura de la navbar es de aproximadamente 100px con los paddings */
         }
 
         .navbar-top,
         .navbar-bottom {
             display: flex;
             width: 100%;
-            /* Ambas líneas ocupan todo el ancho del contenedor */
             padding: 5px 0;
-            /* padding vertical, 0 horizontal */
         }
 
         .navbar-top {
             display: flex;
             width: 100%;
             padding: 5px 0;
-
-            /* PROPIEDAD CLAVE: Alinea verticalmente todos los hijos al centro */
             align-items: center;
             background-color: var(--negro);
         }
@@ -67,42 +60,33 @@
 
         .navbar a {
             transition: transform 0.3s ease-in-out;
-
             text-decoration: none;
             color: var(--v);
-            /* Aprovechamos para definir también el color aquí */
         }
 
         .top-section {
             width: 33.333%;
-            /* Cada sección ocupa un tercio del ancho */
             text-align: center;
             cursor: pointer;
-            /* PROPIEDAD CLAVE: Hace que la sección sea un contenedor flex... */
             display: flex;
-
-            /* ...y centra su contenido tanto vertical como horizontalmente */
             align-items: center;
             justify-content: center;
         }
 
         .bottom-section {
             width: 50%;
-            /* Cada sección ocupa la mitad del ancho */
             text-align: center;
             text-decoration: none;
             cursor: pointer;
         }
 
         a:hover {
-            /* Agranda el texto a 1.2 veces su tamaño original */
             transform: scale(1.5);
         }
 
         .active {
             font-weight: bold;
             transform: scale(1.1);
-
         }
 
         .footer-custom {
@@ -121,6 +105,47 @@
 
         .footer-logo {
             max-width: 60%;
+        }
+
+        /* Estilos de las tarjetas de servicio */
+        .servicio-precio {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 0;
+        }
+
+        .servicio-desde {
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.85;
+        }
+
+        /* Línea chica "+ IVA" debajo del precio: visible, sin esconderla */
+        .servicio-iva {
+            display: block;
+            text-align: center;
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .servicio-lista {
+            padding-left: 1.2rem;
+        }
+
+        .servicio-lista li {
+            margin-bottom: 0.4rem;
+        }
+
+        .servicio-meta {
+            font-size: 0.95rem;
+        }
+
+        /* Sección de packs */
+        .packs-intro {
+            max-width: 700px;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -152,323 +177,386 @@
         </div>
 
         <div>
-            <h4 class="mt-5 text-center py-5" style="color: var(--negro); background-color: var(--blanco); ">
-                Los costos expresados en esta página son aproximados,<br> ya que los <strong>requerimientos de un
-                    proyecto</strong> pueden tener una <strong>gran cantidad de
-                    variables.</strong><br> Pretendo transmitir un aproximado o una base de los costos<br> para
-                facilitar
-                nuestra
-                comunicación, y dar una idea de lo
-                que incluyen los servicios.<br><input type="checkbox" checked aria-hidden="true"> Entiendo lo expresado.
+            <h4 class="mt-5 text-center py-5 px-3" style="color: var(--negro); background-color: var(--blanco); ">
+                Los costos expresados en esta página son aproximados,<br>
+                ya que los requerimientos de un proyecto pueden tener una <strong>gran cantidad de variables.</strong><br>
+                Todos los precios están en dólares (USD).
             </h4>
-        </div><br>
-        <div class="img-container">
-                <img src="img/pack-web-sd.png" class="align-items-center" width="100%" alt="...">
         </div><br>
 
         <div class="container mb-5">
 
+            <!-- FILA 1 -->
             <div class="row mb-5">
-                <!--DISEÑO DE LOGO-->
+
+                <!--1. DISEÑO Y DESARROLLO WEB-->
                 <div class="col-12 col-lg-4 mb-5">
-                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
-                        <img src="img/logo-desarrollo/1.png" class="" alt="Responsive" width="100%">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <img src="img/logo-desarrollo.asesoria/diseño_y_desarrollo.png" class="" alt="" width="100%">
                         <div class="card-body"><br>
-                            <h2 class="text-center">Diseño de Logo</h2>
-                            <p class="text-center">(básico 2 formatos)</p>
+                            <h2 class="text-center">Diseño y Desarrollo web</h2>
+                            <p class="text-center">Sitio de 4 páginas: inicio, acerca de, catálogo y contacto</p>
+                            <p class="text-center servicio-precio"><span class="servicio-desde">desde</span>
+                                US$500</p>
+                            <small class="servicio-iva">+ IVA</small>
 
-                            <br>
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Diseño a medida sobre tu marca (logo y paleta de colores ya definidos)</li>
+                                <li>Desarrollo adaptado a celular y escritorio</li>
+                                <li>Catálogo de productos con consulta y cierre de la venta por WhatsApp</li>
+                                <li>Formulario de contacto con proveedor externo</li>
+                                <li>Buenas prácticas de accesibilidad</li>
+                                <li>2 rondas de revisión y documentación</li>
+                            </ul>
 
-                            <h5 class="text-center">INCLUYE:</h5><br>
-                            <table class="table " style="color: var(--blanco);">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tareas</th>
-                                        <th scope="col">Horas</th>
-                                        <th scope="col">Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Reuniones on-line</th>
-                                        <td> > 1hs</td>
-                                        <td>$10usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Primer boceto y primera revisión</th>
-                                        <td>2hs</td>
-                                        <td>$20usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Segundo boceto y segunda revisión</th>
-                                        <td>5hs</td>
-                                        <td>$50usd</td>
+                            <h5 class="mt-4">No incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Creación de logo o identidad de marca</li>
+                                <li>Base de datos, pagos ni panel de gestión (ver Ecommerce)</li>
+                                <li>Redacción de textos ni fotografía</li>
+                            </ul>
 
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Detalles finales y documentación</th>
-                                        <td>2hs</td>
-                                        <td>$20usd</td>
-
-                                    </tr>
-                                    <th scope="row"><strong>Total</strong></th>
-                                    <td>10hs</td>
-                                    <td>$100usd</td>
-                                </tbody>
-                            </table>
-
+                            <p class="servicio-meta mt-4 mb-1"><strong>Plazo:</strong> hasta 1 mes, con tiempo para
+                                probar y ajustar.</p>
+                            <p class="servicio-meta"><strong>Dedicación estimada:</strong> 25 hs.</p>
                         </div>
-                        <div class="card-footer" style="display: none;">
-                            <p class="text-center">El mínimo tiempo requerido para hacer un logo es de 10hs, para un
-                                diseño express
-                                "de un día para el otro".
-                                El tiempo recomendado para un diseño completamente personalizado es de 20hs. Cada
-                                proyecto varía
-                                segun sus requerimientos.
-                            </p>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
                         </div>
                     </div>
                 </div>
-                <!--DISEÑO DE PAGINA WEN-->
+
+                <!--2. LANDING PAGE-->
                 <div class="col-12 col-lg-4 mb-5">
-                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
-                        <img src="img/logo-desarrollo/2.png" class="" alt="Responsive" width="100%">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <img src="img/logo-desarrollo.asesoria/landing.png" class="" alt="" width="100%">
                         <div class="card-body"><br>
-                            <h2 class="text-center">Diseño de Página web</h2>
-                            <p class="text-center">(básica de 2-4 secciones)</p>
-                            <br>
+                            <h2 class="text-center">Landing Page</h2>
+                            <p class="text-center">Una sola página pensada para una acción: que te contacten o te
+                                escriban</p>
+                            <p class="text-center servicio-precio">US$300</p>
+                            <small class="servicio-iva">+ IVA</small>
 
-                            <h5 class="text-center">INCLUYE:</h5><br>
-                            <table class="table " style="color: var(--blanco);">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tareas</th>
-                                        <th scope="col">Horas</th>
-                                        <th scope="col">Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Reuniones on-line</th>
-                                        <td> > 2hs</td>
-                                        <td>$20usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Investigaciónes y recopilación de material</th>
-                                        <td>5hs</td>
-                                        <td>$50usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Bosquejos</th>
-                                        <td>3hs</td>
-                                        <td>$30usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Prototipo de baja fidelidad</th>
-                                        <td>4hs</td>
-                                        <td>$40usd</td>
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Diseño a medida sobre tu marca</li>
+                                <li>Desarrollo adaptado a celular y escritorio</li>
+                                <li>Botón a WhatsApp o formulario con proveedor externo</li>
+                                <li>Buenas prácticas de accesibilidad</li>
+                                <li>2 rondas de revisión</li>
+                            </ul>
 
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Maquetas</th>
-                                        <td>5hs</td>
-                                        <td>$50usd</td>
+                            <h5 class="mt-4">No incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Más de una página</li>
+                                <li>Creación de logo, textos ni fotografía</li>
+                            </ul>
 
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Prototipo de alta fidelidad</th>
-                                        <td>10hs</td>
-                                        <td>$100usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Revisiones y documentación</th>
-                                        <td>5hs</td>
-                                        <td>$50usd</td>
-                                    </tr>
-                                    <th scope="row"><strong>Total</strong></th>
-                                    <td>44hs</td>
-                                    <td>$440usd</td>
-                                </tbody>
-                            </table>
-
+                            <p class="servicio-meta mt-4 mb-1"><strong>Plazo:</strong> 1 a 2 semanas.</p>
+                            <p class="servicio-meta"><strong>Dedicación estimada:</strong> 15 hs.</p>
                         </div>
-                        <div class="card-footer" style="display: none;">
-                            <p class="text-center">
-                            </p>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
                         </div>
                     </div>
                 </div>
-                <!--MAQUETACIÓN-->
+
+                <!--3. ECOMMERCE-->
                 <div class="col-12 col-lg-4 mb-5">
-                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
-                        <img src="img/logo-desarrollo/3.png" class="" alt="Responsive" width="100%">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <img src="img/logo-desarrollo.asesoria/ecommerce.png" class="" alt="" width="100%">
                         <div class="card-body"><br>
-                            <h2 class="text-center">Maquetación</h2>
-                            <p class="text-center">HTML, CSS, JS</p>
+                            <h2 class="text-center">Ecommerce</h2>
+                            <p class="text-center">Tienda online para un emprendimiento, hasta 20 productos</p>
+                            <p class="text-center servicio-precio"><span class="servicio-desde">desde</span>
+                                US$4.000</p>
+                            <small class="servicio-iva">+ IVA</small>
 
-                            <br>
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Diseño a medida y desarrollo frontend y backend</li>
+                                <li>Base de datos</li>
+                                <li>Panel para gestionar productos y ver los pedidos</li>
+                                <li>Compra directa, sin necesidad de crear cuenta</li>
+                                <li>Pasarela de pago</li>
+                                <li>Aviso de cada pedido por mail y WhatsApp</li>
+                                <li>Control de stock básico</li>
+                                <li>Pruebas y configuración</li>
+                            </ul>
 
-                            <h5 class="text-center">INCLUYE:</h5>
-                            <p class="text-center">Básico 2-4 secciones estáticas.</p><br>
-                            <table class="table " style="color: var(--blanco);">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tareas</th>
-                                        <th scope="col">Horas</th>
-                                        <th scope="col">Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Maquetación HTML</th>
-                                        <td> 5hs</td>
-                                        <td>$100usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Añadir Css y Bootstrap</th>
-                                        <td>5hs</td>
-                                        <td>$100usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">JS</th>
-                                        <td>5hs</td>
-                                        <td>$100usd</td>
+                            <h5 class="mt-4">No incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Cuentas de usuario ni perfiles de cliente</li>
+                                <li>Filtros ni búsqueda avanzada</li>
+                                <li>Gestión de devoluciones y reembolsos</li>
+                                <li>Varias sucursales (se presupuesta aparte)</li>
+                                <li>Fotografía de productos, textos, hosting y dominio</li>
+                            </ul>
 
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Detalles finales y documentación</th>
-                                        <td>2hs</td>
-                                        <td>$40usd</td>
-
-                                    </tr>
-                                    <th scope="row"><strong>Total</strong></th>
-                                    <td>17hs</td>
-                                    <td>$340usd</td>
-                                </tbody>
-                            </table>
-
+                            <p class="servicio-meta mt-4 mb-1"><strong>Plazo:</strong> 6 a 8 semanas.</p>
+                            <p class="servicio-meta"><strong>Dedicación estimada:</strong> 200 hs.</p>
                         </div>
-                        <div class="card-footer" style="display: none;">
-                            <p class="text-center">
-                            </p>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- FILA 2 -->
             <div class="row mb-5">
-                <!--Ecommerce-->
-                <div class="col-12 col-lg-6 mb-5">
-                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
-                        <img src="img/logo-desarrollo.ecommerce.png" class="" alt="Responsive" width="100%">
+
+                <!--4. AUDITORÍA DE ACCESIBILIDAD Y UX (unificada)-->
+                <!-- OJO: el precio (desde US$350) es una propuesta mía, confirmalo o cambialo -->
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)"> 
+                        <img src="img/logo-desarrollo.asesoria/auditoria_ux.png" class="" alt="" width="100%">
                         <div class="card-body"><br>
-                            <h2 class="text-center">Ecommerce</h2><br>
-                            <p class="text-center">Básico 20 productos</p>
-                            <br>
+                            <h2 class="text-center">Auditoría de Accesibilidad y UX</h2>
+                            <p class="text-center">Para que tu web la pueda usar cualquier persona, y la use con
+                                facilidad</p>
+                            <p class="text-center servicio-precio"><span class="servicio-desde">desde</span>
+                                US$350</p>
+                            <small class="servicio-iva">+ IVA</small>
 
-                            <h5 class="text-center">INCLUYE:</h5>
-                            <p class="text-center">Diseño web, desarrollo frontend y backend</p><br>
-                            <table class="table " style="color: var(--blanco);">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tareas</th>
-                                        <th scope="col">Horas</th>
-                                        <th scope="col">Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Diseño web</th>
-                                        <td> 60hs</td>
-                                        <td>$300usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Desarrollo front-end</th>
-                                        <td>40hs</td>
-                                        <td>$200usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Desarrollo back-end</th>
-                                        <td>60hs</td>
-                                        <td>$300usd</td>
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Reunión inicial online</li>
+                                <li>Revisión de hasta 5 páginas según WCAG 2.2 nivel AA</li>
+                                <li>Análisis de la experiencia de usuario de tu sitio o app</li>
+                                <li>Pruebas con herramientas automáticas y revisión manual</li>
+                                <li>Informe en PDF con los problemas priorizados y cómo resolverlos</li>
+                                <li>Reunión de devolución</li>
+                            </ul>
 
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Testeos y configuraciones</th>
-                                        <td>40hs</td>
-                                        <td>$200usd</td>
+                            <h5 class="mt-4">No incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Corrección de los problemas (se cotiza aparte)</li>
+                            </ul>
 
-                                    </tr>
-                                    <th scope="row"><strong>Total</strong></th>
-                                    <td>200hs</td>
-                                    <td>$1000usd</td>
-                                </tbody>
-                            </table>
-
+                            <p class="servicio-meta mt-4 mb-1"><strong>Plazo:</strong> 1 a 2 semanas.</p>
+                            <p class="servicio-meta"><strong>Dedicación estimada:</strong> 15 hs.</p>
                         </div>
-                        <div class="card-footer" style="display: none;">
-                            <p class="text-center">
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!--Asesoría Digital-->
-                <div class="col-12 col-lg-6 mb-5">
-                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
-                        <img src="img/logo-desarrollo.asesoria.png" class="" alt="Responsive" width="100%">
-                        <div class="card-body"><br>
-                            <h2 class="text-center">Asesoría Digital</h2><br>
-                            <p class="text-center">Descubre en que punto te encuentras y que necesitas para mejorar</p>
-                            <br>
-
-                            <h5 class="text-center">INCLUYE:</h5>
-                            <p class="text-center">PDF con indicaciones personalizadas.</p><br>
-
-                            <table class="table " style="color: var(--blanco);">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tareas</th>
-                                        <th scope="col">Horas</th>
-                                        <th scope="col">Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Primera reunion</th>
-                                        <td> 1hs</td>
-                                        <td>$10usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Investigación</th>
-                                        <td>1hs</td>
-                                        <td>$10usd</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Generación de propuestas</th>
-                                        <td>2hs</td>
-                                        <td>$20usd</td>
-
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Segunda reunion</th>
-                                        <td>1hs</td>
-                                        <td>$10usd</td>
-
-                                    </tr>
-                                    <th scope="row"><strong>Total</strong></th>
-                                    <td>5hs</td>
-                                    <td>$50usd</td>
-                                </tbody>
-                            </table>
-
-                        </div>
-                        <div class="card-footer" style="display: none;">
-                            <p class="text-center">
-                            </p>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
                         </div>
                     </div>
                 </div>
 
+                <!--5. ASESORÍA DIGITAL-->
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <img src="img/logo-desarrollo.asesoria/asesoria_digital.png" class="" alt="" width="100%">
+                        <div class="card-body"><br>
+                            <h2 class="text-center">Asesoría Digital</h2>
+                            <p class="text-center">Descubrí en qué punto estás y qué necesitás para mejorar</p>
+                            <p class="text-center servicio-precio">US$100</p>
+                            <small class="servicio-iva">+ IVA</small>
+
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Primera reunión</li>
+                                <li>Investigación de tu situación digital</li>
+                                <li>Propuestas priorizadas</li>
+                                <li>Segunda reunión</li>
+                                <li>PDF con indicaciones personalizadas</li>
+                            </ul>
+
+                            <h5 class="mt-4">Bonus</h5>
+                            <ul class="servicio-lista">
+                                <li>Si luego contratás un proyecto en los siguientes 30 días, la asesoría se descuenta
+                                    del total</li>
+                            </ul>
+
+                            <p class="servicio-meta mt-4 mb-1"><strong>Plazo:</strong> 1 semana.</p>
+                            <p class="servicio-meta"><strong>Dedicación estimada:</strong> 5 hs.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--6. DISEÑO DE LOGO (al final de los servicios)-->
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <img src="img/logo-desarrollo.asesoria/diseño_logos.png" class="" alt="" width="100%">
+                        <div class="card-body"><br>
+                            <h2 class="text-center">Diseño de Logo</h2>
+                            <p class="text-center">Logo simple para usar en web y redes</p>
+                            <p class="text-center servicio-precio">US$80</p>
+                            <small class="servicio-iva">+ IVA</small>
+
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Reunión inicial online</li>
+                                <li>2 propuestas con 2 rondas de revisión</li>
+                                <li>Diseño original para cada cliente</li>
+                                <li>Entrega en PNG y SVG</li>
+                            </ul>
+
+                            <h5 class="mt-4">No incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Búsqueda de antecedentes ni registro de marca. Si necesitás registrarlo, consultá
+                                    por un presupuesto aparte</li>
+                                <li>Manual de marca ni papelería (ver Pack Origen)</li>
+                                <li>Preparación para imprenta o cartelería</li>
+                                <li>Revisiones adicionales a las 2 incluidas</li>
+                            </ul>
+
+                            <p class="servicio-meta mt-4 mb-1"><strong>Plazo:</strong> 5 a 7 días hábiles.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PACKS DE DISEÑO (abajo del todo)-->
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h2 class="text-center" style="color: var(--blanco);">Packs de diseño</h2>
+                    <p class="text-center packs-intro" style="color: var(--blanco);">
+                        Pedidos frecuentes, con precio de lista. Todas las piezas son para formato
+                        <strong>digital</strong>
+                        (redes, WhatsApp, web). Se pueden acordar canjes valuados a precio de lista.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+
+                <!--PACK ORIGEN-->
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <div class="card-body"><br>
+                            <h2 class="text-center">Pack Origen</h2>
+                            <p class="text-center">Marca personal básica para que te identifiquen</p>
+                            <p class="text-center servicio-precio">US$120</p>
+                            <small class="servicio-iva">+ IVA</small>
+
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Diseño de logo (PNG y SVG)</li>
+                                <li>Manual de marca simple: 2 tipografías, paleta de colores y versiones del ícono
+                                    (color y blanco y negro)</li>
+                                <li>Tarjeta personal digital</li>
+                                <li>2 rondas de revisión</li>
+                            </ul>
+
+                            <h5 class="mt-4">No incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Búsqueda de antecedentes ni registro de marca</li>
+                                <li>Papelería ni preparación para imprenta</li>
+                            </ul>
+
+                            <p class="servicio-meta mt-4 mb-1"><strong>Plazo:</strong> 1 semana.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PACK UNIVERSO GRÁFICO-->
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <div class="card-body"><br>
+                            <h2 class="text-center">Pack Universo Gráfico</h2>
+                            <p class="text-center">5 piezas a elección para tu marca</p>
+                            <p class="text-center servicio-precio">US$110</p>
+                            <small class="servicio-iva">+ IVA · pieza suelta US$25 + IVA</small>
+
+                            <h5 class="mt-4">Elegí entre</h5>
+                            <ul class="servicio-lista">
+                                <li>Diseño para redes sociales (posts e historias)</li>
+                                <li>Flyers y afiches en formato digital (también en tamaño A4)</li>
+                                <li>Tarjetas personales digitales</li>
+                            </ul>
+
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>1 ronda de ajustes por pieza</li>
+                                <li>Entrega lista para compartir o publicar</li>
+                            </ul>
+
+                            <h5 class="mt-4">No incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Creación de logo o marca (se parte de una marca ya definida)</li>
+                                <li>Impresión (corre por cuenta del cliente)</li>
+                                <li>Piezas nuevas fuera de las 5 elegidas (cuentan como un pedido nuevo)</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PACK HORIZONTE DIGITAL-->
+                <!-- OJO: el precio (US$350) es una propuesta mía, confirmalo o cambialo -->
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-3 h-100" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <div class="card-body"><br>
+                            <h2 class="text-center">Pack Horizonte Digital</h2>
+                            <p class="text-center">Web básica de 3 páginas para tener presencia online</p>
+                            <p class="text-center servicio-precio">US$350</p>
+                            <small class="servicio-iva">+ IVA</small>
+
+                            <h5 class="mt-4">Incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Inicio, con tus productos o servicios para mostrar (sin botón de compra)</li>
+                                <li>Acerca de</li>
+                                <li>Contacto, con botón a WhatsApp o formulario</li>
+                                <li>Diseño a medida, adaptado a celular y escritorio</li>
+                                <li>Buenas prácticas de accesibilidad</li>
+                            </ul>
+
+                            <h5 class="mt-4">No incluye</h5>
+                            <ul class="servicio-lista">
+                                <li>Catálogo con venta por WhatsApp (ver Diseño y Desarrollo web)</li>
+                                <li>Tienda online, logo, textos, hosting ni dominio</li>
+                            </ul>
+
+                            <p class="servicio-meta mt-4 mb-1"><strong>Plazo:</strong> 2 a 3 semanas.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-outline-light" href="contacto.html">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CONDICIONES GENERALES-->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card p-3" style="background-color: #6b7a922a; color: var(--blanco)">
+                        <div class="card-body">
+                            <h2 class="text-center">Condiciones generales</h2>
+                            <ul class="servicio-lista mt-4">
+                                <li><strong>Moneda e impuestos:</strong> los precios están en dólares (USD) y no
+                                    incluyen IVA.</li>
+                                <li><strong>Forma de pago:</strong> en los proyectos más chicos, 50% al comenzar y 50%
+                                    al entregar. En el ecommerce, por hitos: 40% al comenzar, 30% con la tienda
+                                    funcionando en pruebas y 30% al entregar.</li>
+                                <li><strong>Cambios fuera de lo acordado:</strong> se cotizan a US$20 por hora, siempre
+                                    con tu aprobación previa.</li>
+                                <li><strong>Contenido:</strong> los textos e imágenes los aportás vos, salvo que se
+                                    acuerde otra cosa.</li>
+                                <li><strong>Hosting y dominio:</strong> van por cuenta del cliente; te ayudo a
+                                    elegirlos y configurarlos.</li>
+                                <li><strong>Canjes:</strong> se pueden acordar, valuados a precio de lista.</li>
+                                <li><strong>Diseños hechos en Canva:</strong> se entregan para uso exclusivo del
+                                    cliente y deben usarse conforme a la Licencia de Contenido de Canva. El cliente no
+                                    puede transferirlos a terceros, revender ni sublicenciar por separado los
+                                    elementos incluidos, ni registrar como marca un logo que contenga elementos de la
+                                    biblioteca de Canva.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -487,7 +575,7 @@
 
             <div class="col-md-4 text-center mb-3 mb-md-0">
                 <a href="index.html">
-                    <img src="img/Logonav.png" alt="Logo SDSTUDIOSofía Delmonte" class="img-fluid footer-logo">
+                    <img src="img/Logonav.png" alt="Logo SDSTUDIO Sofía Delmonte" class="img-fluid footer-logo">
                 </a>
             </div>
 
@@ -501,16 +589,11 @@
                 <p class="mb-1"><a href="contacto.html">CONTACTO</a></p>
             </div>
 
-
-
             <div class="text-center mt-4">
                 <p class=" text-center">© 2025 SDSTUDIO Sofía Delmonte</p>
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
